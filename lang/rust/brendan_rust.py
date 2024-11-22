@@ -18,6 +18,8 @@ code.language: rust
 class UserActions:
 
     def let(text: str):
+        actions.key("escape")
+        actions.key("i")
         actions.auto_insert("let "+ to_snake_case(text) + " = ")
         actions.key("escape")
         actions.key("A")
