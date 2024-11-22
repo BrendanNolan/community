@@ -5,7 +5,7 @@ mod = Module()
 @mod.action_class
 class Actions:
 
-    def sturgeon(text: str):
+    def let(text: str):
         "Inserts a let statement"
 
 
@@ -17,7 +17,7 @@ code.language: rust
 @ctx.action_class("user")
 class UserActions:
 
-    def sturgeon(text: str):
+    def let(text: str):
         actions.auto_insert("let "+ to_snake_case(text) + " = ")
         actions.key("escape")
         actions.key("A")
