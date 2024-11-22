@@ -494,8 +494,7 @@ class UserActions:
         actions.key("enter")
 
     def sturgeon(text):
-        """Outputs the spoken argument as plain text."""
-        actions.insert("let "+ text " = ")
+        actions.insert("let "+ text + " = ")
         actions.key("escape")
         actions.key("A")
 
