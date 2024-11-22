@@ -49,23 +49,23 @@ toggle use: user.code_toggle_libraries()
 ## Simple aliases
 borrow: "&"
 borrow mutable: "&mut "
-(a sink | async | asynchronous): "async "
-(pub | public): "pub "
-(pub | public) crate: "pub(crate) "
-(dyn | dynamic): "dyn "
-constant: "const "
-(funk | func | function): "fn "
-(imp | implements): "impl "
-let mute: "let mut "
-let: "let "
-(mute | mutable): "mut "
-(mod | module): "mod "
-ref (mute | mutable): "&mut "
-ref: "&"
-trait: "trait "
-match: user.code_state_switch()
-(some | sum): "Some"
-static: "static "
+state (a sink | async | asynchronous): "async "
+state (pub | public): "pub "
+state (pub | public) crate: "pub(crate) "
+state (dyn | dynamic): "dyn "
+state constant: "const "
+state (funk | func | function): "fn "
+state (imp | implements): "impl "
+state let mute: "let mut "
+state let: "let "
+state (mute | mutable): "mut "
+state (mod | module): "mod "
+state ref (mute | mutable): "ref mut "
+state ref: "ref "
+state trait: "trait "
+state match: user.code_state_switch()
+state (some | sum): "Some"
+state static: "static "
 self taught: "self."
 state use: user.code_import()
 
@@ -74,9 +74,9 @@ use <user.code_libraries>:
     key(; enter)
 
 ## specialist flow control
-if let some: user.insert_between("if let Some(", ")")
-if let (ok | okay): user.insert_between("if let Ok(", ")")
-if let error: user.insert_between("if let Err(", ")")
+state if let some: user.insert_between("if let Some(", ")")
+state if let (ok | okay): user.insert_between("if let Ok(", ")")
+state if let error: user.insert_between("if let Err(", ")")
 
 ## rust centric synonyms
 is some: user.code_insert_is_not_null()
@@ -104,4 +104,3 @@ macro wrap {user.code_macros}:
 block dock comment: user.code_comment_documentation_block()
 inner dock comment: user.code_comment_documentation_inner()
 inner block dock comment: user.code_comment_documentation_block_inner()
-
