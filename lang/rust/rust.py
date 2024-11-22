@@ -9,6 +9,15 @@ mod.list("code_macros", desc="List of macros for active language")
 mod.list("code_trait", desc="List of traits for active language")
 
 
+def to_snake_case(text):
+    import re
+    # Replace spaces or hyphens with underscores
+    text = re.sub(r"[\s\-]+", "_", text)
+    # Add underscores before uppercase letters, then lower the entire string
+    text = re.sub(r"([a-z])([A-Z])", r"\1_\2", text)
+    return text.lower()
+
+
 @mod.action_class
 class Actions:
     def code_state_implements():
@@ -493,10 +502,6 @@ class UserActions:
         actions.user.insert_between("/*!", "*/")
         actions.key("enter")
 
-    def sturgeon(text):
-        actions.insert("let "+ text + " = ")
-        actions.key("escape")
-        actions.key("A")
 
 def code_insert_function_or_macro(
     text: str,
