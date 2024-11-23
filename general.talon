@@ -42,8 +42,11 @@ leet: insert("leet")
 neo vim: insert("nvim .\n")
 
 first arg:
-    insert("/;\nF)%l")
+    insert("/(\n/[a-z,A-Z]\n")
 second arg:
-    insert("/;\nF)%f,w")
+    insert("/(\n/,\nw")
 third arg:
-    insert("/;\nF)%f,wf,w")
+    insert("/(\n/,\nw/,\nw")
+
+go to func:
+    insert("/;\n?)\n%?[a-z,A-Z]\nb")
