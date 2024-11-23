@@ -38,3 +38,5 @@ trash: key(backspace)
 del: key(delete)
 
 leet: insert("leet")
+
+neo vim: insert("nvim .\n")
