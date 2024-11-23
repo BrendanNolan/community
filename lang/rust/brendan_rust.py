@@ -10,6 +10,9 @@ class Actions:
     def let(text: str):
         "Inserts a let statement"
 
+    def let_mut(text: str):
+        "Inserts a let mut statement"
+
     def method_call(text: str):
         "Calls method"
 
@@ -36,6 +39,12 @@ class UserActions:
         esc("a")
         actions.insert("let " + to_snake_case(text) + " = ")
         esc("a")
+
+    def let_mut(text: str):
+        esc("a")
+        actions.insert("let mut " + to_snake_case(text) + " = ")
+        esc("a")
+
 
     def method_call(text: str):
         esc("a")
