@@ -42,7 +42,7 @@ unsafe block: user.code_state_unsafe()
     insert(" {")
     key("enter")
 
-enum <user.text>:
+(enum | enumeration) <user.text>:
     insert("enum ")
     insert(user.formatted_text(text, "PUBLIC_CAMEL_CASE"))
     insert(" {")

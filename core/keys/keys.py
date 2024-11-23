@@ -138,7 +138,7 @@ punctuation_words = {
     "L paren": "(",
     "left paren": "(",
     "R paren": ")",
-    "raren": ")",
+    "rake": ")",
 }
 symbol_key_words = {
     "dot": ".",
@@ -151,8 +151,8 @@ symbol_key_words = {
     "brack": "[",
     "bracket": "[",
     "left bracket": "[",
-    "lare": "[",
-    "rare": "]",
+    "laff": "[",
+    "raff": "]",
     "right square": "]",
     "r brack": "]",
     "r bracket": "]",
@@ -168,7 +168,7 @@ symbol_key_words = {
     "bang": "!",
     "down score": "_",
     "underscore": "_",
-    "laren": "(",
+    "lake": "(",
     "brace": "{",
     "lace": "{",
     "curly bracket": "{",

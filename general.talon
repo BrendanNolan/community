@@ -34,3 +34,5 @@ eight: key(8)
 nine: key(9)
 ten: key(10)
 
+trash: key(backspace)
+del: key(delete)
