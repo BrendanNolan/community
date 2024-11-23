@@ -36,3 +36,5 @@ ten: key(10)
 
 trash: key(backspace)
 del: key(delete)
+
+leet: insert("leet")
