@@ -40,3 +40,10 @@ del: key(delete)
 leet: insert("leet")
 
 neo vim: insert("nvim .\n")
+
+first arg:
+    insert("/;\nF)%l")
+second arg:
+    insert("/;\nF)%f,w")
+third arg:
+    insert("/;\nF)%f,wf,w")
