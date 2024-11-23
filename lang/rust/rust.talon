@@ -39,10 +39,14 @@ unsafe block: user.code_state_unsafe()
 (struct | structure) <user.text>:
     insert("struct ")
     insert(user.formatted_text(text, "PUBLIC_CAMEL_CASE"))
+    insert(" {")
+    key("enter")
 
 enum <user.text>:
     insert("enum ")
     insert(user.formatted_text(text, "PUBLIC_CAMEL_CASE"))
+    insert(" {")
+    key("enter")
 
 toggle use: user.code_toggle_libraries()
 
