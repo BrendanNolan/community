@@ -1,7 +1,7 @@
 code.language: rust
 
-constant <user.text>: user.let(text)
-variable <user.text>: user.let_mut(text)
+let <user.text_brendan>: user.let(text_brendan)
+var <user.text_brendan>: user.let_mut(text_brendan)
 method <user.text>: user.method_call(text)
 closet:
     key(escape)

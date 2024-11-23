@@ -160,6 +160,12 @@ def text(m) -> str:
     return format_phrase(m)
 
 
+@mod.capture(rule="")
+def text_brendan(m) -> str:
+    """A sequence of words, faithfully reproduced with no funny business."""
+    return format_phrase_brendan(m)
+
+
 @mod.capture(
     rule="(<phrase> | {user.vocabulary} | {user.punctuation} | {user.prose_snippets} | <user.prose_currency> | <user.prose_time> | <user.prose_number> | <user.prose_percent> | <user.prose_modifier>)+"
 )
@@ -196,6 +202,23 @@ def capture_to_words(m):
             if isinstance(item, grammar.vm.Phrase)
             else [item]
         )
+    return words
+
+
+def format_phrase_brendan(m):
+    words = capture_to_words_brendan(m)
+    result = ""
+    for i, word in enumerate(words):
+        if i > 0 and needs_space_between(words[i - 1], word):
+            result += " "
+        result += word
+    return result
+
+
+def capture_to_words_brendan(m):
+    words = []
+    for item in m:
+        words.extend([item])
     return words
 
 
