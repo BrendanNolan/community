@@ -32,15 +32,15 @@ settings():
 # rust-specific grammars
 
 ## for unsafe rust
-state unsafe: "unsafe "
+unsafe: "unsafe "
 unsafe block: user.code_state_unsafe()
 
 ## rust centric struct and enum definitions
-state (struct | structure) <user.text>:
+(struct | structure) <user.text>:
     insert("struct ")
     insert(user.formatted_text(text, "PUBLIC_CAMEL_CASE"))
 
-state enum <user.text>:
+enum <user.text>:
     insert("enum ")
     insert(user.formatted_text(text, "PUBLIC_CAMEL_CASE"))
 
@@ -67,16 +67,16 @@ match: user.code_state_switch()
 (some | sum): "Some"
 static: "static "
 self taught: "self."
-state use: user.code_import()
+use: user.code_import()
 
 use <user.code_libraries>:
     user.code_insert_library(code_libraries, "")
     key(; enter)
 
 ## specialist flow control
-state if let some: user.insert_between("if let Some(", ")")
-state if let (ok | okay): user.insert_between("if let Ok(", ")")
-state if let error: user.insert_between("if let Err(", ")")
+if let some: user.insert_between("if let Some(", ")")
+if let (ok | okay): user.insert_between("if let Ok(", ")")
+if let error: user.insert_between("if let Err(", ")")
 
 ## rust centric synonyms
 is some: user.code_insert_is_not_null()
