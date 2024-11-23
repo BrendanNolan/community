@@ -2,6 +2,7 @@ from talon import Context, Module, actions
 
 mod = Module()
 
+
 @mod.action_class
 class Actions:
 
@@ -26,13 +27,14 @@ ctx.matches = r"""
 code.language: rust
 """
 
+
 @ctx.action_class("user")
 class UserActions:
 
     def let(text: str):
         esc("a")
-        actions.insert("let "+ to_snake_case(text) + " = ")
-        esc("a");
+        actions.insert("let " + to_snake_case(text) + " = ")
+        esc("a")
 
     def method_call(text: str):
         esc("a")
@@ -54,7 +56,6 @@ class UserActions:
         enter()
         actions.insert("Ela")
 
-
     def for_loop():
         esc("a")
         actions.insert("for  {")
@@ -68,6 +69,7 @@ class UserActions:
 def question():
     actions.key("?")
 
+
 def escape():
     actions.key("escape")
 
@@ -77,12 +79,13 @@ def enter():
 
 
 def esc(k):
-     actions.key("escape")
-     actions.key(k)
+    actions.key("escape")
+    actions.key(k)
 
 
 def to_snake_case(text):
     import re
+
     # Replace spaces or hyphens with underscores
     text = re.sub(r"[\s\-]+", "_", text)
     # Add underscores before uppercase letters, then lower the entire string
@@ -91,11 +94,10 @@ def to_snake_case(text):
 
 
 def prepare_for_method_call(word: str):
-    """ Splits word on call"""
+    """Splits word on call"""
     parts = word.split("invoke", 1)
     left = parts[0].strip() if parts else ""
     right = parts[1].strip() if len(parts) > 1 else ""
     if not right:
         return "", left
     return left, right
-
