@@ -68,7 +68,6 @@ class UserActions:
 def question():
     actions.key("?")
 
-
 def escape():
     actions.key("escape")
 
