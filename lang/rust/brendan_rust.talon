@@ -6,3 +6,13 @@ closet:
     key(escape)
     key(space)
     key(";")
+
+loop: user.loop()
+for loop: user.for_loop()
+while loop: user.while_loop()
+insert end:
+    key(escape)
+    key("A")
+insert start:
+    key(escape)
+    key("I")

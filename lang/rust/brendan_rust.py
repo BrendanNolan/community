@@ -11,6 +11,16 @@ class Actions:
     def method_call(text: str):
         "Calls method"
 
+    def loop():
+        "Loop"
+
+    def while_loop():
+        "For loop"
+
+    def for_loop():
+        "For loop"
+
+
 ctx = Context()
 ctx.matches = r"""
 code.language: rust
@@ -20,19 +30,56 @@ code.language: rust
 class UserActions:
 
     def let(text: str):
-        actions.key("escape")
-        actions.key("a")
-        actions.auto_insert("let "+ to_snake_case(text) + " = ")
-        actions.key("escape")
-        actions.key("A")
+        esc("a")
+        actions.insert("let "+ to_snake_case(text) + " = ")
+        esc("a");
 
     def method_call(text: str):
-        actions.key("escape")
-        actions.key("a")
+        esc("a")
         l, r = prepare_for_method_call(text)
-        actions.auto_insert(to_snake_case(l) + "." + to_snake_case(r) + "()")
-        actions.key("escape")
-        actions.key("i")
+        actions.insert(to_snake_case(l) + "." + to_snake_case(r) + "()")
+        esc("i")
+
+    def loop():
+        esc("a")
+        actions.insert("loop {")
+        enter()
+
+    def while_loop():
+        esc("a")
+        actions.insert("while  {")
+        enter()
+        escape()
+        actions.insert("?while")
+        enter()
+        actions.insert("Ela")
+
+
+    def for_loop():
+        esc("a")
+        actions.insert("for  {")
+        enter()
+        escape()
+        actions.insert("?for")
+        enter()
+        actions.insert("Ela")
+
+
+def question():
+    actions.key("?")
+
+
+def escape():
+    actions.key("escape")
+
+
+def enter():
+    actions.key("enter")
+
+
+def esc(k):
+     actions.key("escape")
+     actions.key(k)
 
 
 def to_snake_case(text):
