@@ -6,3 +6,6 @@ to press 'w' five times.
 
 core/keys/ dir (in particular the core/keys/keys.py and core/keys/keys.talon) files are
 worth looking at.
+
+Talon uses "hammer" to refer to what I call upper camel case.
+Saying "format help" will show a list of formattings.
