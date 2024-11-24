@@ -91,7 +91,7 @@ class UserActions:
 
     def func(text: str):
         esc("a")
-        actions.insert("fn " + to_snake_case(text) + "() {")
+        actions.insert("fn " + to_snake_case(text) + "() {\n")
         escape()
         actions.insert("?(")
         enter()
@@ -99,8 +99,11 @@ class UserActions:
 
     def pub_func(text: str):
         esc("a")
-        actions.insert("pub ")
-        self.func(text)
+        actions.insert("pub fn " + to_snake_case(text) + "() {\n")
+        escape()
+        actions.insert("?(")
+        enter()
+        actions.insert("a")
 
 def question():
     actions.key("?")
