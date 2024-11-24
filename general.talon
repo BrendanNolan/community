@@ -32,7 +32,9 @@ six: key(6)
 seven: key(7)
 eight: key(8)
 nine: key(9)
-ten: key(10)
+ten:
+    key(1)
+    key(0)
 
 trash: key(backspace)
 del: key(delete)

@@ -28,6 +28,12 @@ class Actions:
     def mod_block(text: str):
         "Module block"
 
+    def func(text: str):
+        "Function"
+
+    def pub_func(text: str):
+        "Function"
+
 
 ctx = Context()
 ctx.matches = r"""
@@ -83,6 +89,18 @@ class UserActions:
         actions.insert("mod " + to_snake_case(text) + " {")
         enter()
 
+    def func(text: str):
+        esc("a")
+        actions.insert("fn " + to_snake_case(text) + "() {")
+        escape()
+        actions.insert("?(")
+        enter()
+        actions.insert("a")
+
+    def pub_func(text: str):
+        esc("a")
+        actions.insert("pub ")
+        self.func(text)
 
 def question():
     actions.key("?")
