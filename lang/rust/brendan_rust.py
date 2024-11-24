@@ -25,6 +25,9 @@ class Actions:
     def for_loop():
         "For loop"
 
+    def mod_block(text: str):
+        "Module block"
+
 
 ctx = Context()
 ctx.matches = r"""
@@ -74,6 +77,11 @@ class UserActions:
         actions.insert("?for")
         enter()
         actions.insert("Ela")
+
+    def mod_block(text: str):
+        esc("a")
+        actions.insert("mod " + to_snake_case(text) + " {")
+        enter()
 
 
 def question():
