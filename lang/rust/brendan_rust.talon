@@ -20,4 +20,3 @@ insert start:
     key(escape)
     key("I")
 
-
