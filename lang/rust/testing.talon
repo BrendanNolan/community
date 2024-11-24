@@ -1,1 +1,1 @@
-boomerang <user.text>: user.tst(text)
+boomerang <phrase>$: user.tst(phrase)
