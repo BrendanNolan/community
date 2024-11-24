@@ -1,9 +1,11 @@
-up: key(k)
-down: key(j)
-left: key(h)
-right: key(l)
+go up: key(k)
+go down: key(j)
+go left: key(h)
+go right: key(l)
 word: key(w)
 back: key(b)
+search: key(/)
+birch: key(?)
 
 args:
     insert("()")
