@@ -35,6 +35,8 @@ float sixteen: insert("f16")
 float thirty two: insert("f32")
 float sixty four: insert("f64")
 
+condition variable: insert("CondVar")
+
 option:
     insert("Option<>")
     key(escape)

@@ -17,10 +17,6 @@ temple:
     insert("<>")
     key(escape)
     key(i)
-optional:
-    insert("std::optional<>")
-    key(escape)
-    key(i)
 
 zero: key(0)
 one: key(1)
