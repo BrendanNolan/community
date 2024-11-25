@@ -9,7 +9,7 @@ birch <user.text>: insert("?{text}\\c\n")
 safe search <user.text>: insert("/")
 safe birch <user.text>: insert("?")
 
-args:
+call:
     insert("()")
     key(escape)
     key(i)
@@ -19,10 +19,6 @@ temple:
     key(i)
 optional:
     insert("std::optional<>")
-    key(escape)
-    key(i)
-option:
-    insert("Option<>")
     key(escape)
     key(i)
 

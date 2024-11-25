@@ -26,4 +26,21 @@ eye send:
     key(escape)
     key("A")
     key(space)
+integer eight: insert("i8")
+integer sixteen: insert("i16")
+integer thirty two: insert("i32")
+integer sixty four: insert("i64")
+float eight: insert("f8")
+float sixteen: insert("f16")
+float thirty two: insert("f32")
+float sixty four: insert("f64")
 
+option:
+    insert("Option<>")
+    key(escape)
+    key(i)
+
+vec:
+    insert("Vec<>")
+    key(escape)
+    key(i)
