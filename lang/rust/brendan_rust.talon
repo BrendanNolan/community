@@ -1,12 +1,12 @@
 code.language: rust
 
-constant <phrase>$: user.let(phrase)
-variable <phrase>$: user.let_mut(phrase)
-method <phrase>$: user.method_call(phrase)
-(mod | module) <phrase>$: user.mod_block(phrase)
+constant <user.text>$: user.let(text)
+variable <user.text>$: user.let_mut(text)
+method <user.text>$: user.method_call(text)
+(mod | module) <user.text>$: user.mod_block(text)
 
-(funk) <phrase>$: user.func(phrase)
-(pub funk) <phrase>$: user.pub_func(phrase)
+(funk) <user.text>$: user.func(text)
+(pub funk) <user.text>$: user.pub_func(text)
 
 closet:
     key(escape)
