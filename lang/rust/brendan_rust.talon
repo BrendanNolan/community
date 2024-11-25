@@ -1,5 +1,5 @@
 code.language: rust
-
+-
 constant <user.text>$: user.let(text)
 variable <user.text>$: user.let_mut(text)
 method <user.text>$: user.method_call(text)
