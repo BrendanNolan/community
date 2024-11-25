@@ -4,8 +4,10 @@ go left: key(h)
 go right: key(l)
 word: key(w)
 back: key(b)
-search: key(/)
-birch: key(?)
+search <user.text>: insert("/{text}\c\n")
+birch <user.text>: insert("?{text}\c\n")
+safe search <user.text>: insert("/")
+safe birch <user.text>: insert("?")
 
 args:
     insert("()")
