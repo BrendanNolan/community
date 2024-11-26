@@ -42,6 +42,12 @@ second arg:
     insert("/(\n/,\nw")
 third arg:
     insert("/(\n/,\nw/,\nw")
+change first arg:
+    insert("/(\n/[a-z,A-Z]\ncia")
+change second arg:
+    insert("/(\n/,\nwcia")
+change third arg:
+    insert("/(\n/,\nw/,\nwcia")
 
 (new arg | new param):
     key(escape)
@@ -58,6 +64,8 @@ del word: insert("diw")
 del around word: insert("daw")
 del par: insert("dip")
 del around par: insert("dap")
+change arg: insert("cia")
+change around arg: insert("caa")
 
 squeeze:
     key(escape)
