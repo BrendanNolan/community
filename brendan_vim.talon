@@ -43,7 +43,7 @@ second arg:
 third arg:
     insert("/(\n/,\nw/,\nw")
 
-next arg:
+(next arg | next param):
     key(escape)
     insert("/)\ni, ")
 
