@@ -38,6 +38,19 @@ del: key(delete)
 leet: insert("leet")
 
 neo vim: insert("nvim .\n")
+fugitive: insert(" gg")
+vim write:
+    key(escape)
+    insert(":w")
+    key(enter)
+vim quit:
+    key(escape)
+    insert(":q")
+    key(enter)
+vim force quit:
+    key(escape)
+    insert(":q!")
+    key(enter)
 
 first arg:
     insert("/(\n/[a-z,A-Z]\n")
