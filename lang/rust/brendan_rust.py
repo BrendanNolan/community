@@ -7,6 +7,9 @@ mod = Module()
 @mod.action_class
 class Actions:
 
+    def param(text: str):
+        "Inserts a param"
+
     def let(text: str):
         "Inserts a let statement"
 
@@ -43,6 +46,9 @@ code.language: rust
 
 @ctx.action_class("user")
 class UserActions:
+
+    def param(text: str):
+        actions.insert(to_snake_case(text) + ": ")
 
     def let(text: str):
         actions.insert("let " + to_snake_case(text) + " = ")

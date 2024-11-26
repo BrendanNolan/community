@@ -8,6 +8,8 @@ method <user.text>$: user.method_call(text)
 (funk) <user.text>$: user.func(text)
 (pub funk) <user.text>$: user.pub_func(text)
 
+param <user.text>$: user.param(text)
+
 closet:
     key(escape)
     key(space)
