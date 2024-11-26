@@ -45,29 +45,22 @@ code.language: rust
 class UserActions:
 
     def let(text: str):
-        esc("a")
         actions.insert("let " + to_snake_case(text) + " = ")
-        esc("a")
 
     def let_mut(text: str):
-        esc("a")
         actions.insert("let mut " + to_snake_case(text) + " = ")
-        esc("a")
 
 
     def method_call(text: str):
-        esc("a")
         l, r = prepare_for_method_call(text)
         actions.insert(to_snake_case(l) + "." + to_snake_case(r) + "()")
         esc("i")
 
     def loop():
-        esc("a")
         actions.insert("loop {")
         enter()
 
     def while_loop():
-        esc("a")
         actions.insert("while  {")
         enter()
         escape()
@@ -76,7 +69,6 @@ class UserActions:
         actions.insert("Ela")
 
     def for_loop():
-        esc("a")
         actions.insert("for  {")
         enter()
         escape()
@@ -85,12 +77,10 @@ class UserActions:
         actions.insert("Ela")
 
     def mod_block(text: str):
-        esc("a")
         actions.insert("mod " + to_snake_case(text) + " {")
         enter()
 
     def func(text: str):
-        esc("a")
         actions.insert("fn " + to_snake_case(text) + "() {\n")
         escape()
         actions.insert("?(")
@@ -98,15 +88,11 @@ class UserActions:
         actions.insert("a")
 
     def pub_func(text: str):
-        esc("a")
         actions.insert("pub fn " + to_snake_case(text) + "() {\n")
         escape()
         actions.insert("?(")
         enter()
         actions.insert("a")
-
-def question():
-    actions.key("?")
 
 
 def escape():
