@@ -57,3 +57,7 @@ del word: insert("diw")
 del around word: insert("daw")
 del par: insert("dip")
 del around par: insert("dap")
+
+squeeze:
+    key(escape)
+    insert("$i")
