@@ -1,3 +1,5 @@
+neo vim: insert("nvim .\n")
+
 go up: key(k)
 go down: key(j)
 go left: key(h)
@@ -9,37 +11,18 @@ birch <user.text>: insert("?{text}\\c\n")
 safe search <user.text>: insert("/")
 safe birch <user.text>: insert("?")
 
-call:
-    insert("()")
+find a file:
     key(escape)
-    key(i)
-temple:
-    insert("<>")
+    insert(" ff")
+vim grep:
     key(escape)
-    key(i)
-
-zero: key(0)
-one: key(1)
-two: key(2)
-three: key(3)
-four: key(4)
-five: key(5)
-six: key(6)
-seven: key(7)
-eight: key(8)
-nine: key(9)
-ten:
-    key(1)
-    key(0)
-
-trash: key(backspace)
-del: key(delete)
-
-leet: insert("leet")
-len: insert("len")
-
-neo vim: insert("nvim .\n")
-fugitive: insert(" gg")
+    inseert(" gf")
+file search:
+    key(escape)
+    inseert(" fs")
+fugitive:
+    key(escape)
+    insert(" gg")
 vim write:
     key(escape)
     insert(":w")
