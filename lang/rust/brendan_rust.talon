@@ -46,3 +46,7 @@ vec:
     insert("Vec<>")
     key(escape)
     key(i)
+
+add type:
+    key(escape)
+    insert("a: ")

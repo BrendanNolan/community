@@ -36,6 +36,7 @@ trash: key(backspace)
 del: key(delete)
 
 leet: insert("leet")
+len: insert("len")
 
 neo vim: insert("nvim .\n")
 fugitive: insert(" gg")
@@ -59,6 +60,10 @@ second arg:
 third arg:
     insert("/(\n/,\nw/,\nw")
 
+next arg:
+    key(escape)
+    insert("a, ")
+
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
 
@@ -74,3 +79,6 @@ del around par: insert("dap")
 squeeze:
     key(escape)
     insert("$i")
+plow:
+    key(escape)
+    insert("A ")
