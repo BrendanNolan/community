@@ -45,7 +45,7 @@ third arg:
 
 next arg:
     key(escape)
-    insert("a, ")
+    insert("/)\ni, ")
 
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
