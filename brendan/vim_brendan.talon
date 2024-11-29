@@ -67,8 +67,8 @@ delete: key(escape di)
 delete around: key(escape da)
 delete line: key(escape d d)
 
-delete last:
-    key(delete)
+backspace:
+    key(backspace)
 
 closet:
     key(escape)
