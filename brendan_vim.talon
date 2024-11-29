@@ -56,16 +56,10 @@ change third arg:
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
 
-change word: insert("ciw")
-change around word: insert("caw")
-change par: insert("cip")
-change around par: insert("cap")
-del word: insert("diw")
-del around word: insert("daw")
-del par: insert("dip")
-del around par: insert("dap")
-change arg: insert("cia")
-change around arg: insert("caa")
+change in: insert("ci")
+change around: insert("ca")
+del: insert("di")
+del around: insert("da")
 
 closet:
     key(escape)
