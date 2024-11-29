@@ -60,15 +60,12 @@ change third arg:
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
 
-change: insert("ci")
-change around: insert("ca")
-change line:
-    key(escape c c)
-delete: insert("di")
-delete around: insert("da")
-delete line:
-    key(escape)
-    insert("dd")
+change: key(escape ci)
+change around: key(escape ca)
+change line: key(escape c c)
+delete: key(escape di)
+delete around: key(escape da)
+delete line: key(escape d d)
 
 delete last:
     key(delete)
