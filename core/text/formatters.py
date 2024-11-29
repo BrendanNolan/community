@@ -262,7 +262,7 @@ code_formatter_names = {
     "padded": "SPACE_SURROUNDED_STRING",
     "slasher": "ALL_SLASHES",
     "conga": "SLASH_SEPARATED",
-    "smash": "NO_SPACES",
+    "smasher": "NO_SPACES",
     "snake": "SNAKE_CASE",
     "string": "SINGLE_QUOTED_STRING",
     "constant": "ALL_CAPS,SNAKE_CASE",
