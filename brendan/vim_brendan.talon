@@ -63,8 +63,7 @@ go to func:
 change: insert("ci")
 change around: insert("ca")
 change line:
-    key(escape)
-    insert("cc")
+    key(escape c c)
 delete: insert("di")
 delete around: insert("da")
 delete line:
