@@ -1,20 +1,20 @@
 code.language: sea plus plus
 -
 
-constant <user.text>$: user.let(text)
-variable <user.text>$: user.let_mut(text)
-method <user.text>$: user.method_call(text)
-(mod | module) <user.text>$: user.mod_block(text)
+constant <user.text>$: user.cpp_let(text)
+variable <user.text>$: user.cpp_let_mut(text)
+method <user.text>$: user.cpp_method_call(text)
+(mod | module) <user.text>$: user.cpp_mod_block(text)
 
-(funk) <user.text>$: user.func(text)
-(pub funk) <user.text>$: user.pub_func(text)
+(funk) <user.text>$: user.cpp_func(text)
+(pub funk) <user.text>$: user.cpp_pub_func(text)
 
-param <user.text>$: user.param(text)
+param <user.text>$: user.cpp_param(text)
 
 # Control Flow
-loop: user.loop()
-for loop: user.for_loop()
-while loop: user.while_loop()
+loop: user.cpp_loop()
+for loop: user.cpp_for_loop()
+while loop: user.cpp_while_loop()
 
 #Types
 integer: insert("int")
