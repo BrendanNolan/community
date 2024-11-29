@@ -31,3 +31,9 @@ teemux nine:
 teemux ten:
     key(ctrl-g)
     key(10)
+teemux search:
+    key(ctrl-g)
+    key(y)
+teemux look:
+    key(ctrl-g)
+    key(o)
