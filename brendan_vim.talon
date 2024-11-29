@@ -52,6 +52,9 @@ change third arg:
 (new arg | new param):
     key(escape)
     insert("/)\ni, ")
+(next arg | next param):
+    key(escape)
+    insert("/,\nw")
 
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
