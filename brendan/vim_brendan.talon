@@ -60,11 +60,11 @@ change third arg:
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
 
-change: key(escape ci)
-change around: key(escape ca)
+change: key(escape c i)
+change around: key(escape c a)
 change line: key(escape c c)
-delete: key(escape di)
-delete around: key(escape da)
+delete: key(escape d i)
+delete around: key(escape d a)
 delete line: key(escape d d)
 
 backspace:
