@@ -67,9 +67,31 @@ del around par: insert("dap")
 change arg: insert("cia")
 change around arg: insert("caa")
 
+closet:
+    key(escape)
+    key(space)
+    key(";")
+close it:
+    key(escape)
+    key(space)
+    key(";O")
+
+dub new:
+    key(escape)
+    key("O")
+    key(escape)
+    key("O")
+
 squeeze:
     key(escape)
     insert("$i")
 plow:
     key(escape)
     insert("A ")
+append:
+    key(escape)
+    key("A")
+prepend:
+    key(escape)
+    key("I")
+

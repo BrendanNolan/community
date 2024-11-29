@@ -22,15 +22,6 @@ ten:
     key(0)
 
 newline: insert("\\n")
-prepend:
-    key(escape)
-    key("I")
-append:
-    key(escape)
-    key("A")
-append space:
-    key(escape)
-    insert("A ")
 
 trash: key(backspace)
 del: key(delete)

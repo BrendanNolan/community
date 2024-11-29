@@ -10,20 +10,6 @@ method <user.text>$: user.method_call(text)
 
 param <user.text>$: user.param(text)
 
-closet:
-    key(escape)
-    key(space)
-    key(";")
-close it:
-    key(escape)
-    key(space)
-    key(";O")
-dub new:
-    key(escape)
-    key("O")
-    key(escape)
-    key("O")
-
 loop: user.loop()
 for loop: user.for_loop()
 while loop: user.while_loop()
