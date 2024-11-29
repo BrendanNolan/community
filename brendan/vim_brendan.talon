@@ -9,6 +9,9 @@ birch <user.text>: insert("?{text}\\c\n")
 safe search <user.text>: insert("/")
 safe birch <user.text>: insert("?")
 
+undo: key(escape u)
+redo: key(escape ctrl-r)
+
 find a file:
     key(escape)
     insert(" ff")
