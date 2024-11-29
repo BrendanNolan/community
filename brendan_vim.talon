@@ -62,8 +62,17 @@ go to func:
 
 change: insert("ci")
 change around: insert("ca")
-del: insert("di")
-del around: insert("da")
+change line:
+    key(escape)
+    insert("cc")
+delete: insert("di")
+delete around: insert("da")
+delete line:
+    key(escape)
+    insert("dd")
+
+delete last:
+    key(delete)
 
 closet:
     key(escape)
