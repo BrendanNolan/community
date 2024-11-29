@@ -16,7 +16,7 @@ find a file:
     insert(" ff")
 vim grep:
     key(escape)
-    inseert(" gf")
+    insert(" gf")
 file search:
     key(escape)
     inseert(" fs")
