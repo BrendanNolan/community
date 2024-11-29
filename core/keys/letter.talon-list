@@ -2,29 +2,29 @@ list: user.letter
 -
 # for common alternative spoken forms for letters, visit
 # https://talon.wiki/quickstart/improving_recognition_accuracy/#collected-alternatives-to-the-default-alphabet
-(air | alpha): a
-(bat | bravo): b
-(cap | charlie): c
-(drum | delta): d
-(each | echo): e
-(fine | foxtrot): f
-(gust | golf): g
-(harp | hotel): h
-(sit | india): i
-(jury | juliet): j
-(crunch | kappa): k
-(look | lima): l
-(made | mike): m
-(near | november): n
-(odd | oscar): o
-(pit | papa): p
-(quench | quebec): q
-(red | romeo): r
-(sun | sierra): s
-(trap | tango): t
-(urge | uniform): u
-(vest | victor): v
-(whale | whiskey): w
-(plex | xray): x
-(yank | yankee): y
-(zip | zulu): z
+air: a
+bat: b
+cap: c
+drum: d
+each: e
+fine: f
+gust: g
+harp: h
+sit: i
+jury: j
+crunch: k
+look: l
+made: m
+near: n
+odd: o
+pit: p
+quench: q
+red: r
+sun: s
+trap: t
+urge: u
+vest: v
+whale: w
+plex: x
+yank: y
+zip: z
