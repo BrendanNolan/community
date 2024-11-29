@@ -62,7 +62,7 @@ change third arg:
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
 
-change in: insert("ci")
+change: insert("ci")
 change around: insert("ca")
 del: insert("di")
 del around: insert("da")
