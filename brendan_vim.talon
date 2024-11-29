@@ -55,6 +55,9 @@ change third arg:
 (next arg | next param):
     key(escape)
     insert("/,\nw")
+(preev arg | preev param):
+    key(escape)
+    insert("?,\nb")
 
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
