@@ -1,9 +1,12 @@
 neo vim: insert("nvim .\n")
 
-upwards: key(k)
-downwards: key(j)
-leftwards: key(h)
-rightwards: key(l)
+(upwards | north): key(k)
+(downwards | south): key(j)
+(leftwards | west): key(h)
+(rightwards | east): key(l)
+word: key(w)
+back: key(b)
+
 search <user.text>: insert("/{text}\\c\n")
 birch <user.text>: insert("?{text}\\c\n")
 safe search <user.text>: insert("/")
