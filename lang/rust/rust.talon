@@ -32,51 +32,53 @@ settings():
 # rust-specific grammars
 
 ## for unsafe rust
-state unsafe: "unsafe "
+unsafe: "unsafe "
 unsafe block: user.code_state_unsafe()
 
 ## rust centric struct and enum definitions
-state (struct | structure) <user.text>:
+(struct | structure) <user.text>:
     insert("struct ")
     insert(user.formatted_text(text, "PUBLIC_CAMEL_CASE"))
+    insert(" {")
+    key("enter")
 
-state enum <user.text>:
+(enum | enumeration) <user.text>:
     insert("enum ")
     insert(user.formatted_text(text, "PUBLIC_CAMEL_CASE"))
+    insert(" {")
+    key("enter")
 
 toggle use: user.code_toggle_libraries()
 
 ## Simple aliases
 borrow: "&"
 borrow mutable: "&mut "
-state (a sink | async | asynchronous): "async "
-state (pub | public): "pub "
-state (pub | public) crate: "pub(crate) "
-state (dyn | dynamic): "dyn "
-state constant: "const "
-state (funk | func | function): "fn "
-state (imp | implements): "impl "
-state let mute: "let mut "
-state let: "let "
-state (mute | mutable): "mut "
-state (mod | module): "mod "
-state ref (mute | mutable): "ref mut "
-state ref: "ref "
-state trait: "trait "
-state match: user.code_state_switch()
-state (some | sum): "Some"
-state static: "static "
+(a sink | async | asynchronous): "async "
+(pub | public): "pub "
+(pub | public) crate: "pub(crate) "
+(dyn | dynamic): "dyn "
+compile time constant: "const "
+(imp | implements): "impl "
+let mute: "let mut "
+let: "let "
+(mute | mutable): "mut "
+ref (mute | mutable): "&mut "
+ref: "&"
+trait: "trait "
+match: user.code_state_switch()
+(some | sum): "Some"
+static: "static "
 self taught: "self."
-state use: user.code_import()
+use: user.code_import()
 
 use <user.code_libraries>:
     user.code_insert_library(code_libraries, "")
     key(; enter)
 
 ## specialist flow control
-state if let some: user.insert_between("if let Some(", ")")
-state if let (ok | okay): user.insert_between("if let Ok(", ")")
-state if let error: user.insert_between("if let Err(", ")")
+if let some: user.insert_between("if let Some(", ")")
+if let (ok | okay): user.insert_between("if let Ok(", ")")
+if let error: user.insert_between("if let Err(", ")")
 
 ## rust centric synonyms
 is some: user.code_insert_is_not_null()
