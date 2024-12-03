@@ -86,7 +86,7 @@ close it:
     key(A)
     key(";")
     key(escape)
-    key(O)
+    key(o)
 
 dub new:
     key(escape)
