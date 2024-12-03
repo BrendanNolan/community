@@ -78,12 +78,15 @@ backspace:
 
 closet:
     key(escape)
-    key(space)
+    key(A)
     key(";")
+    key(escape)
 close it:
     key(escape)
-    key(space)
-    key(";O")
+    key(A)
+    key(";")
+    key(escape)
+    key(O)
 
 dub new:
     key(escape)
