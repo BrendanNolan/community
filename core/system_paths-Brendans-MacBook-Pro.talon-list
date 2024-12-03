@@ -1,0 +1,16 @@
+list: user.system_paths
+hostname: Brendans-MacBook-Pro
+-
+user: /Users/brendannolan
+desktop: /Users/brendannolan/Desktop
+desk: /Users/brendannolan/Desktop
+documents: /Users/brendannolan/Documents
+docks: /Users/brendannolan/Documents
+downloads: /Users/brendannolan/Downloads
+music: /Users/brendannolan/Music
+pictures: /Users/brendannolan/Pictures
+videos: /Users/brendannolan/Videos
+talon home: /Users/brendannolan/.talon
+talon recordings: /Users/brendannolan/.talon/recordings
+talon user: /Users/brendannolan/.talon/user
+home: /Users/brendannolan
