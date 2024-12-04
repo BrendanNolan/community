@@ -1,9 +1,14 @@
 neo vim: insert("nvim .\n")
 
-(upwards | north): key(k)
-(downwards | south): key(j)
-(leftwards | west): key(h)
-(rightwards | east): key(l)
+north: key(k)
+south: key(j)
+east: key(l)
+west: key(h)
+upwards: insert("k0")
+downwards: insert("j0")
+leftwards: key(h)
+rightwards: key(l)
+
 word: key(w)
 back: key(b)
 
