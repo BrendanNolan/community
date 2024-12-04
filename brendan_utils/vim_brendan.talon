@@ -86,7 +86,7 @@ closet:
     key(A)
     key(";")
     key(escape)
-close it:
+boset:
     key(escape)
     key(A)
     key(";")
