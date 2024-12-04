@@ -55,3 +55,5 @@ whiskey: w
 x ray: x
 yankee: y
 zulu: z
+
+leap: s # for leap.nvim
