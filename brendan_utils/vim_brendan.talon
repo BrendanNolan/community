@@ -9,6 +9,11 @@ downwards: insert("j0")
 leftwards: key(h)
 rightwards: key(l)
 
+record: key(q)
+play: key(@)
+market: insert("mz")
+piggy: insert("`z")
+
 word: key(w)
 back: key(b)
 
@@ -81,12 +86,12 @@ delete line: key(escape d d)
 backspace:
     key(backspace)
 
-closet:
+demi:
     key(escape)
     key(A)
     key(";")
     key(escape)
-boset:
+semi:
     key(escape)
     key(A)
     key(";")
