@@ -1,4 +1,4 @@
-call:
+(call | invoke):
     insert("()")
     key(escape)
     key(i)
