@@ -9,6 +9,16 @@ downwards: insert("j0")
 leftwards: key(h)
 rightwards: key(l)
 
+binsert:
+    key(escape)
+    key(I)
+kinsert:
+    key(escape)
+    insert("A")
+finsert:
+    key(escape)
+    insert("A ")
+
 record: key(q)
 play: key(@)
 market: insert("mz")
