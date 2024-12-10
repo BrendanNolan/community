@@ -37,6 +37,9 @@ class Actions:
     def pub_func(text: str):
         "Function"
 
+    def assign(text: str):
+        "Assign"
+
 
 ctx = Context()
 ctx.matches = r"""
@@ -99,6 +102,9 @@ class UserActions:
         actions.insert("?(")
         enter()
         actions.insert("a")
+
+    def assign(text: str):
+        actions.insert(to_snake_case(text) + " = ")
 
 
 def escape():
