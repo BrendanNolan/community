@@ -33,7 +33,7 @@ option:
     insert("Option<>")
     key(escape)
     key(i)
-vec:
+(vec | vector):
     insert("Vec<>")
     key(escape)
     key(i)
