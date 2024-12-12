@@ -47,15 +47,15 @@ file search:
 fugitive:
     key(escape)
     insert(" gg")
-vim write:
+(vim write | eevim write):
     key(escape)
     insert(":w")
     key(enter)
-vim quit:
+(vim quit | eevim quit):
     key(escape)
     insert(":q")
     key(enter)
-vim force quit:
+(vim force quit | eevim force quit):
     key(escape)
     insert(":q!")
     key(enter)
