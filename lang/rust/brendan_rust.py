@@ -145,7 +145,11 @@ def to_upper_camel(text):
 
 def prepare_for_method_call(word: str):
     """Splits word on call"""
-    parts = word.split("invoke", 1)
+    parts = word.split("calling", 1)
+    if len(parts) < 2:
+        parts = word.split("invoke", 1)
+    if len(parts) < 2:
+        parts = word.split("call", 1)
     left = parts[0].strip() if parts else ""
     right = parts[1].strip() if len(parts) > 1 else ""
     if not right:
