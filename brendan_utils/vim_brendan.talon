@@ -1,5 +1,7 @@
 neo vim: insert("nvim .\n")
 
+leader: key(space)
+
 north: key(k)
 south: key(j)
 east: key(l)
@@ -18,6 +20,34 @@ kinsert:
 finsert:
     key(escape)
     insert("A ")
+
+slide: key(f)
+sloop: key(F)
+leap: key(s)
+
+slap: key(enter)
+
+spike:
+    key(escape)
+    key(o)
+
+spoke:
+    key(escape)
+    key(o)
+    key(escape)
+    key(o)
+
+sweet:
+    key(escape)
+    key(o)
+    key(escape)
+    key(o)
+    key(escape)
+    key(o)
+    key(escape)
+    key(k)
+    key(0)
+    key(i)
 
 record: key(q)
 play: key(@)
