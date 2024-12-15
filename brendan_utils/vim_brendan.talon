@@ -1,5 +1,7 @@
 neo vim: insert("nvim .\n")
 
+(stake | steak): key(escape)
+
 leader: key(space)
 
 north: key(k)
