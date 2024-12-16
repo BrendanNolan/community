@@ -34,6 +34,15 @@ option:
     insert("Option<>")
     key(escape)
     key(i)
+(some | sum):
+    key(escape)
+    insert("iSome(")
+(non | none | nun):
+    key(escape)
+    insert("iNone")
+(ki | quay | key):
+    key(escape)
+    insert("ikey")
 (vec | vector):
     insert("Vec<>")
     key(escape)
