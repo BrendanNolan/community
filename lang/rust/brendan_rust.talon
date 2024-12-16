@@ -20,6 +20,7 @@ for loop: user.for_loop()
 while loop: user.while_loop()
 
 # Types
+you size: insert("usize")
 integer eight: insert("i8")
 integer sixteen: insert("i16")
 integer thirty two: insert("i32")
