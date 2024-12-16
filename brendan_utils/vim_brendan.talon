@@ -23,9 +23,15 @@ finsert:
     key(escape)
     insert("A ")
 
-slide: key(f)
-sloop: key(F)
-leap: key(s)
+slide:
+    key(escape)
+    key(f)
+sloop:
+    key(escape)
+    key(F)
+leap:
+    key(escape)
+    key(s)
 
 slap: key(enter)
 
