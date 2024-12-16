@@ -66,7 +66,6 @@ ref (mute | mutable): "&mut "
 ref: "&"
 trait: "trait "
 match: user.code_state_switch()
-(some | sum): "Some"
 static: "static "
 self taught: "self."
 use: user.code_import()

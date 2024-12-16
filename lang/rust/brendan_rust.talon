@@ -34,10 +34,10 @@ option:
     insert("Option<>")
     key(escape)
     key(i)
-(some | sum):
-    key(escape)
-    insert("iSome(")
-(non | none | nun):
+(some | sum | something):
+    key(escape i)
+    user.insert_between("Some(", ")")
+(non | none | nun | nothing):
     key(escape)
     insert("iNone")
 (ki | quay | key):
