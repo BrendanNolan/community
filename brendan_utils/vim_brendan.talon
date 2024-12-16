@@ -165,3 +165,8 @@ prepend:
     key(escape)
     key("I")
 
+fixup:
+    key(escape)
+    key(= =)
+selection fixup:
+    key(= =)
