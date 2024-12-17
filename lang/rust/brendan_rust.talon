@@ -11,6 +11,8 @@ scope: insert("::")
 (funk) <user.text>$: user.func(text)
 (pub funk) <user.text>$: user.pub_func(text)
 
+make macro: user.insert_between("#[", "]")
+
 param <user.text>$: user.param(text)
 add type:
     key(escape)
