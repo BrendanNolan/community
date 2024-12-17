@@ -126,7 +126,10 @@ go to func:
 
 change: key(escape c i)
 change around: key(escape c a)
-change line: key(escape c c)
+change line:
+    key(escape)
+    key(c)
+    key(c)
 delete: key(escape d i)
 delete around: key(escape d a)
 delete line: key(escape d d)
