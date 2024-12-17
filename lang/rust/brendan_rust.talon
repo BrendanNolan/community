@@ -6,6 +6,8 @@ assign <user.text>$: user.assign(text)
 method <user.text>$: user.method_call(text)
 (mod | module) <user.text>$: user.mod_block(text)
 
+scope: insert("::")
+
 (funk) <user.text>$: user.func(text)
 (pub funk) <user.text>$: user.pub_func(text)
 
@@ -31,21 +33,20 @@ float thirty two: insert("f32")
 float sixty four: insert("f64")
 condition variable: insert("CondVar")
 option:
-    insert("Option<>")
-    key(escape)
-    key(i)
+    key(escape i)
+    user.insert_between("Option<", ">")
 (some | sum | something):
     key(escape i)
     user.insert_between("Some(", ")")
 (non | none | nun | nothing):
-    key(escape)
-    insert("iNone")
+    key(escape i)
+    insert("None")
 (ki | quay | key):
-    key(escape)
-    insert("ikey")
+    key(escape i)
+    insert("key")
 (vec | vector):
-    insert("Vec<>")
-    key(escape)
-    key(i)
+    key(escape i)
+    user.insert_between("Vec<", ">")
 stir:
+    key(escape i)
     insert("str")
