@@ -5,28 +5,20 @@ neo vim: insert("nvim .\n")
 leader: key(space)
 
 north:
-    key(escape)
     key(k)
 south:
-    key(escape)
     key(j)
 east:
-    key(escape)
     key(l)
 west:
-    key(escape)
     key(h)
 upwards:
-    key(escape)
-    insert("k0")
+    key(k)
 downwards:
-    key(escape)
-    insert("j0")
+    key(j)
 leftwards:
-    key(escape)
     key(h)
 rightwards:
-    key(escape)
     key(l)
 
 binsert:
