@@ -22,6 +22,7 @@ add type:
 loop: user.loop()
 for loop: user.for_loop()
 while loop: user.while_loop()
+if statement: user.if_statement()
 
 # Types
 you size: insert("usize")

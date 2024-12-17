@@ -28,6 +28,9 @@ class Actions:
     def for_loop():
         "For loop"
 
+    def if_statement():
+        "For loop"
+
     def mod_block(text: str):
         "Module block"
 
@@ -83,6 +86,14 @@ class UserActions:
         enter()
         escape()
         actions.insert("?for")
+        enter()
+        actions.insert("Ela")
+
+    def if_statement():
+        actions.insert("if  {")
+        enter()
+        escape()
+        actions.insert("?if")
         enter()
         actions.insert("Ela")
 
