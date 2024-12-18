@@ -2,8 +2,8 @@ list: user.letter
 -
 # for common alternative spoken forms for letters, visit
 # https://talon.wiki/quickstart/improving_recognition_accuracy/#collected-alternatives-to-the-default-alphabet
-air: a
-bat: b
+ache: a # Used to be air
+bob: b # Used to be bat
 cap: c
 drum: d
 each: e
