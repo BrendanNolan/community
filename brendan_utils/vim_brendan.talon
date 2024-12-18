@@ -21,6 +21,15 @@ leftwards:
 rightwards:
     key(l)
 
+right arrow: key(right)
+left arrow: key(left)
+up arrow: key(up)
+down arrow: key(down)
+
+next: key(ctrl-n)
+preev: key(ctrl-p)
+clozer: key(;)
+
 binsert:
     key(escape)
     key(I)
