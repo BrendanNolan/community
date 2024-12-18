@@ -1,12 +1,3 @@
-(call | invoke):
-    insert("()")
-    key(escape)
-    key(i)
-temple:
-    insert("<>")
-    key(escape)
-    key(i)
-
 zero: key(0)
 one: key(1)
 two: key(2)
@@ -28,3 +19,6 @@ del: key(delete)
 
 leet: insert("leet")
 len: insert("len")
+
+(cd | seedee | seadee): insert("cd ")
+(cd up | seedee up | seadee up): insert("cd ..")
