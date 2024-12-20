@@ -14,7 +14,7 @@ ten:
 
 newline: insert("\\n")
 
-(dot | period | prick): key(space)
+(dot | period | prick): key(.)
 
 (trash | backspace): key(backspace)
 del: key(delete)
