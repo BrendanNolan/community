@@ -8,8 +8,8 @@ method <user.text>$: user.method_call(text)
 
 scope: insert("::")
 
-(funk) <user.text>$: user.func(text)
-(pub funk) <user.text>$: user.pub_func(text)
+(funk | function) <user.text>$: user.func(text)
+(pub funk | public function | pub function | public funk) <user.text>$: user.pub_func(text)
 
 make macro: user.insert_between("#[", "]")
 
@@ -23,6 +23,7 @@ loop: user.loop()
 for loop: user.for_loop()
 while loop: user.while_loop()
 if statement: user.if_statement()
+return: user.insert_between("return ", ";")
 
 # Types
 you size: insert("usize")

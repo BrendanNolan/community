@@ -1,6 +1,6 @@
 neo vim: insert("nvim .\n")
 
-(stake | steak): key(escape)
+(escape | stake | steak | scape): key(escape)
 
 leader: key(space)
 
@@ -20,7 +20,7 @@ down: key(down)
 
 next: key(ctrl-n)
 preev: key(ctrl-p)
-clozer: key(;)
+(clozer | semicolon): key(;)
 
 binsert:
     key(escape)
@@ -31,6 +31,9 @@ kinsert:
 finsert:
     key(escape)
     insert("A ")
+squeeze:
+    key(escape)
+    insert("$i")
 
 slide:
     key(escape)
@@ -42,7 +45,7 @@ leap:
     key(escape)
     key(s)
 
-slap: key(enter)
+(enter | slap): key(enter)
 
 spike:
     key(escape)
@@ -66,18 +69,24 @@ sweet:
     key(0)
     key(i)
 
-record: key(q)
-play: key(@)
-market: insert("mz")
-piggy: insert("`z")
+record: key(escape q)
+play: key(escape @)
+market:
+    key(escape)
+    insert("mz")
+piggy:
+    key(escape)
+    insert("`z")
 
-word: key(w)
-back: key(b)
+word: key(escape w)
+back: key(escape b)
 
-search <user.text>: insert("/{text}\\c\n")
-birch <user.text>: insert("?{text}\\c\n")
-safe search <user.text>: insert("/")
-safe birch <user.text>: insert("?")
+search <user.text>:
+    key(escape)
+    insert("/{text}\\c\n")
+birch <user.text>:
+    key(escape)
+    insert("?{text}\\c\n")
 
 undo: key(escape u)
 redo: key(escape ctrl-r)
@@ -94,7 +103,7 @@ file search:
 fugitive:
     key(escape)
     insert(" gg")
-(vim write | editor write):
+(vim write | editor write | ritter | writter):
     key(escape)
     insert(":w")
     key(enter)
@@ -108,16 +117,22 @@ fugitive:
     key(enter)
 
 first arg:
+    key(escape)
     insert("/(\n/[a-z,A-Z]\n")
 second arg:
+    key(escape)
     insert("/(\n/,\nw")
 third arg:
+    key(escape)
     insert("/(\n/,\nw/,\nw")
 change first arg:
+    key(escape)
     insert("/(\n/[a-z,A-Z]\ncia")
 change second arg:
+    key(escape)
     insert("/(\n/,\nwcia")
 change third arg:
+    key(escape)
     insert("/(\n/,\nw/,\nwcia")
 
 (new arg | new org | new argument | new orgument | new param | new parameter):
@@ -139,12 +154,15 @@ change line:
     key(escape)
     key(c)
     key(c)
+yoink: key(escape y i)
+yoink around: key(escape y a)
+yoink line:
+    key(escape)
+    key(y)
+    key(y)
 delete: key(escape d i)
 delete around: key(escape d a)
 delete line: key(escape d d)
-
-backspace:
-    key(backspace)
 
 demi:
     key(escape)
@@ -157,25 +175,6 @@ semi:
     key(";")
     key(escape)
     key(o)
-
-dub new:
-    key(escape)
-    key("O")
-    key(escape)
-    key("O")
-
-squeeze:
-    key(escape)
-    insert("$i")
-plow:
-    key(escape)
-    insert("A ")
-append:
-    key(escape)
-    key("A")
-prepend:
-    key(escape)
-    key("I")
 
 fixup:
     key(escape)
@@ -191,3 +190,26 @@ temple:
     insert("<>")
     key(escape)
     key(i)
+
+arrow: insert(" -> ")
+dub arrow: insert(" => ")
+left arrow: insert(" <- ")
+less: insert(" < ")
+lesseek: insert(" <= ")
+greater: insert(" > ")
+greatereek: insert(" >= ")
+plus: (" + ")
+minus: (" - ")
+over: (" / ")
+remainder: (" % ")
+in(" in ")
+
+lone arrow: insert("->")
+lone dub arrow: insert("=>")
+lone left arrow: insert("<-")
+lone less: insert("<")
+lone lesseek: insert("<=")
+lone greater: insert(">")
+lone greatereek: insert(">=")
+lone plus: ("+")
+lone minus: ("-")
