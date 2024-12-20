@@ -6,3 +6,5 @@ to vim: key(alt-e)
 
 (pipe to exargs | to exargs): insert(" | xargs -I{} ")
 (pipe to exargs parallel | to exargs parallel): insert(" | xargs -P0 -I{} ")
+
+ripgrep: insert("rg ")
