@@ -14,11 +14,13 @@ ten:
 
 newline: insert("\\n")
 
-trash: key(backspace)
+(dot | period | prick): key(space)
+
+(trash | backspace): key(backspace)
 del: key(delete)
+
+(tab | tabby): key(tab)
 
 leet: insert("leet")
 len: insert("len")
 
-(cd | seedee | seadee): insert("cd ")
-(cd up | seedee up | seadee up): insert("cd ..")
