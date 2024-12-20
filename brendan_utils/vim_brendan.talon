@@ -4,14 +4,6 @@ neo vim: insert("nvim .\n")
 
 leader: key(space)
 
-north:
-    key(k)
-south:
-    key(j)
-east:
-    key(l)
-west:
-    key(h)
 upwards:
     key(k)
 downwards:
@@ -21,10 +13,10 @@ leftwards:
 rightwards:
     key(l)
 
-right arrow: key(right)
-left arrow: key(left)
-up arrow: key(up)
-down arrow: key(down)
+left: key(left)
+right: key(right)
+up: key(up)
+down: key(down)
 
 next: key(ctrl-n)
 preev: key(ctrl-p)
