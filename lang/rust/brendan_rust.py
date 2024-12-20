@@ -54,7 +54,6 @@ code.language: rust
 class UserActions:
 
     def param(text: str):
-        esc("i")
         actions.insert(to_snake_case(text) + ": ")
 
     def let(text: str):

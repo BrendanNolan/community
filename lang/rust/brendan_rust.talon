@@ -11,12 +11,9 @@ scope: insert("::")
 (funk | function) <user.text>$: user.func(text)
 (pub funk | public function | pub function | public funk) <user.text>$: user.pub_func(text)
 
-make macro: user.insert_between("#[", "]")
+(make macro | create macro | hash macro): user.insert_between("#[", "]")
 
 param <user.text>$: user.param(text)
-add type:
-    key(escape)
-    insert("a: ")
 
 # Control Flow
 loop: user.loop()
@@ -36,21 +33,14 @@ float sixteen: insert("f16")
 float thirty two: insert("f32")
 float sixty four: insert("f64")
 condition variable: insert("CondVar")
-option:
-    key(escape i)
-    user.insert_between("Option<", ">")
-(some | sum | something):
-    key(escape i)
-    user.insert_between("Some(", ")")
-(non | none | nun | nothing):
-    key(escape i)
-    insert("None")
-(ki | quay | key):
-    key(escape i)
-    insert("key")
-(vec | vector):
-    key(escape i)
-    user.insert_between("Vec<", ">")
-stir:
-    key(escape i)
-    insert("str")
+option: user.insert_between("Option<", ">")
+(some | sum | something): user.insert_between("Some(", ")")
+(non | none | nun | nothing): insert("None")
+(ki | quay | key): insert("key")
+(vec | vector): user.insert_between("Vec<", ">")
+stir: insert("str")
+
+# Scopes
+(stud | stood): insert("std::")
+collections: insert("collections::")
+(comp | compare): insert("cmp::")
