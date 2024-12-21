@@ -3,6 +3,12 @@
 Say "force <language>" to enable a language mode. Say "clear language mode <language>" to clear a
 language mode.tail ~/.talon/talon.log
 
+# Making Words Available as Commands and as Normal Words
+
+If you go to the core/keys/keys.py file, you will find two lists, one is called `punctuation_words`
+and one is called `symbol_keywords`. The former will always print the symbol and the latter will
+print the symbol when used as a command and the word when used as part of a sentence.
+
 # Ordinal Numbers
 
 Ordinal numbers seem to work out of the box for repeating commands. So you can say "whale forty
