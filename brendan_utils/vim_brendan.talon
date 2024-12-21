@@ -222,6 +222,6 @@ populate:
 
 grasp:
     key(escape)
-    insert("/ ")
+    insert("/  ")
     key(enter)
     key(a)
