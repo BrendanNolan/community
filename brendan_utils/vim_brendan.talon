@@ -213,3 +213,16 @@ lone greater: insert(">")
 lone greatereek: insert(">=")
 lone plus: insert("+")
 lone minus: insert("-")
+
+populate:
+    key(escape)
+    insert("/^$")
+    key(enter)
+    key(i)
+    key(tab)
+
+grasp:
+    key(escape)
+    insert("/ ")
+    key(enter)
+    key(a)
