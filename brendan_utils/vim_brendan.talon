@@ -225,3 +225,15 @@ grasp:
     insert("/  ")
     key(enter)
     key(a)
+
+apply format:
+    key(escape)
+    insert(" fmt")
+
+rust debugabbels:
+    key(escape)
+    insert(" rdb")
+
+close debugger:
+    key(escape)
+    insert(" cdb")
