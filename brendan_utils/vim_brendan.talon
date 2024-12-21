@@ -202,7 +202,6 @@ plus: insert(" + ")
 minus: insert(" - ")
 over: insert(" / ")
 remainder: insert(" % ")
-in: insert(" in ")
 
 lone arrow: insert("->")
 lone dub arrow: insert("=>")
