@@ -138,7 +138,6 @@ punctuation_words = {
     "L paren": "(",
     "left paren": "(",
     "R paren": ")",
-    "hound": ")",
 }
 symbol_key_words = {
     "dot": ".",
@@ -169,6 +168,8 @@ symbol_key_words = {
     "down score": "_",
     "underscore": "_",
     "round": "(",
+    "sound": ")",
+    "hound": ")",
     "brace": "{",
     "lace": "{",
     "curly bracket": "{",
