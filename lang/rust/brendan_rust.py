@@ -81,7 +81,7 @@ class UserActions:
         actions.insert("Ela")
 
     def for_loop():
-        actions.insert("for  {")
+        actions.insert("for  in  {")
         enter()
         escape()
         actions.insert("?for")
