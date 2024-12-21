@@ -2,7 +2,7 @@ list: user.letter
 -
 # for common alternative spoken forms for letters, visit
 # https://talon.wiki/quickstart/improving_recognition_accuracy/#collected-alternatives-to-the-default-alphabet
-affa: a
+air: a
 bob: b
 cap: c
 drum: d
@@ -15,7 +15,8 @@ jury: j
 crunch: k
 look: l
 made: m
-near: n
+note: n
+nope: n
 odd: o
 pit: p
 quench: q
