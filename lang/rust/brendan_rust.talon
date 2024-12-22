@@ -45,8 +45,14 @@ option: user.insert_between("Option<", ">")
 (ki | quay | key): insert("key")
 (vec | vector): user.insert_between("Vec<", ">")
 stir: insert("str")
+(effen | closure): insert("Fn")
+(effen | closure) once: insert("FnOnce")
+(effen | closure) (mute | mutable): insert("FnMut")
 
 # Scopes
 (stud | stood): insert("std::")
 collections: insert("collections::")
 (comp | compare): insert("cmp::")
+
+# Impl
+(imple | impell | impel): insert("impl ")
