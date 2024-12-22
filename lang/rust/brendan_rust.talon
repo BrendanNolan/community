@@ -21,7 +21,7 @@ for loop: user.for_loop()
 while loop: user.while_loop()
 if statement: user.if_statement()
 return: user.insert_between("return ", ";")
-add return type:
+insert return type:
     key(escape)
     insert("/)")
     key(enter)
