@@ -85,18 +85,14 @@ class UserActions:
         enter()
 
     def func(text: str):
-        actions.insert("fn " + to_snake_case(text) + "() {\n")
+        actions.insert("fn " + to_snake_case(text) + "()")
         escape()
-        actions.insert("?(")
-        enter()
-        actions.insert("a")
+        actions.insert("i")
 
     def pub_func(text: str):
-        actions.insert("pub fn " + to_snake_case(text) + "() {\n")
+        actions.insert("pub fn " + to_snake_case(text) + "()")
         escape()
-        actions.insert("?(")
-        enter()
-        actions.insert("a")
+        actions.insert("i")
 
     def assign(text: str):
         actions.insert(to_snake_case(text) + " = ")
