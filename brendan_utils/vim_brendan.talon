@@ -15,7 +15,7 @@ rightwards:
 
 left: key(left)
 right: key(right)
-up: key(up)
+north: key(up)
 down: key(down)
 
 next: key(ctrl-n)
@@ -191,34 +191,32 @@ temple:
     key(escape)
     key(i)
 
-arrow: insert(" -> ")
-dub arrow: insert(" => ")
-left arrow: insert(" <- ")
-less: insert(" < ")
-lesseek: insert(" <= ")
-greater: insert(" > ")
-greatereek: insert(" >= ")
-plus: insert(" + ")
-minus: insert(" - ")
-over: insert(" / ")
-remainder: insert(" % ")
+stuff arrow: insert(" -> ")
+stuff dub arrow: insert(" => ")
+stuff left arrow: insert(" <- ")
+stuff less: insert(" < ")
+stuff lesseek: insert(" <= ")
+stuff greater: insert(" > ")
+stuff greatereek: insert(" >= ")
+stuff plus: insert(" + ")
+stuff minus: insert(" - ")
+stuff over: insert(" / ")
+stuff remainder: insert(" % ")
 
-lone arrow: insert("->")
-lone dub arrow: insert("=>")
-lone left arrow: insert("<-")
-lone less: insert("<")
-lone lesseek: insert("<=")
-lone greater: insert(">")
-lone greatereek: insert(">=")
-lone plus: insert("+")
-lone minus: insert("-")
+arrow: insert("->")
+dub arrow: insert("=>")
+left arrow: insert("<-")
+less: insert("<")
+lesseek: insert("<=")
+greater: insert(">")
+greatereek: insert(">=")
 
 populate:
     key(escape)
-    insert("/^$")
+    insert("/}")
     key(enter)
     key(i)
-    key(tab)
+    key(enter)
 
 grasp:
     key(escape)
@@ -226,7 +224,7 @@ grasp:
     key(enter)
     key(a)
 
-apply format:
+(apply format | apply formatter | formatter):
     key(escape)
     insert(" fmt")
 
@@ -237,3 +235,10 @@ rust debugabbels:
 close debugger:
     key(escape)
     insert(" cdb")
+
+add scope:
+    key(escape)
+    insert("A {}")
+    key(escape)
+    key(i)
+    key(enter)
