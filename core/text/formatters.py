@@ -68,8 +68,9 @@ class CodeFormatter(Formatter):
         format_first: Callable[[str], str],
         format_rest: Callable[[str], str],
     ):
-        # Strip anything that is not alpha-num, whitespace, dot or comma
-        text = re.sub(r"[^\w\d\s.,]+", "", text)
+        # Brendan
+        # text = re.sub(r"[^\w\d\s.,]+", "", text)
+
         # Split on anything that is not alpha-num
         words = re.split(r"([^\w\d]+)", text)
         groups = []
@@ -86,8 +87,9 @@ class CodeFormatter(Formatter):
             elif not word.isalpha():
                 groups.append(delimiter.join(group))
                 word = word.strip()
-                if word != ".":
-                    word += " "
+                # Brendan
+                # if word != ".":
+                #     word += " "
                 first = True
                 groups.append(word)
                 group = []
@@ -252,22 +254,22 @@ formatters_dict = {f.id: f for f in formatter_list}
 code_formatter_names = {
     "all cap": "ALL_CAPS",
     "all down": "ALL_LOWERCASE",
-    "camel": "PRIVATE_CAMEL_CASE",
     "dotted": "DOT_SEPARATED",
     "dub string": "DOUBLE_QUOTED_STRING",
     "dunder": "DOUBLE_UNDERSCORE",
-    "hammer": "PUBLIC_CAMEL_CASE",
     "kebab": "DASH_SEPARATED",
-    "packed": "DOUBLE_COLON_SEPARATED",
     "padded": "SPACE_SURROUNDED_STRING",
     "slasher": "ALL_SLASHES",
     "conga": "SLASH_SEPARATED",
     "smash": "NO_SPACES",
-    "snake": "SNAKE_CASE",
     "string": "SINGLE_QUOTED_STRING",
     "constant": "ALL_CAPS,SNAKE_CASE",
 }
 prose_formatter_names = {
+    "packed": "DOUBLE_COLON_SEPARATED",
+    "hammer": "PUBLIC_CAMEL_CASE",
+    "camel": "PRIVATE_CAMEL_CASE",
+    "snake": "SNAKE_CASE",
     "say": "NOOP",
     "speak": "NOOP",
     "sentence": "CAPITALIZE_FIRST_WORD",
