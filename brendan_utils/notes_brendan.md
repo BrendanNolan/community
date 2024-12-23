@@ -33,3 +33,12 @@ Consider the following line from the community talon config:
 It will honour what you say. So, if you say "inside quotes cap drum", it will write `'cd'`, if you
 say "inside quotes say charlie drum", it will write `'charlie drum'`, if you say "inside quotes
 snake charlie drum", it will write `'charlie_drum'`, etc.
+
+# Outstanding Questions
+
+Can I make formatters ("snake", "kebob" etc) respect my `punctuation_words` list (as defined in
+`core/keys/keys.py`) in the same way that dictation mode does? I have added "dot" to my
+`punctuation_words` list, so that it prints `.` as part of a "say" command. But as part of a "snake"
+command, it still prints `_dot_`.
+
+Try saying "no space hello underscore world dot how underscore are underscore you"
