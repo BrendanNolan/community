@@ -141,6 +141,7 @@ punctuation_words = {
 }
 symbol_key_words = {
     "dot": ".",
+    "prick": ".",
     "point": ".",
     "quote": "'",
     "question": "?",
