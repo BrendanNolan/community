@@ -140,6 +140,7 @@ punctuation_words = {
     # Brendan
     "dot": ".",
     "prick": ".",
+    "punk": ".",
     "question": "?",
     "slash": "/",
     "backslash": "\\",
