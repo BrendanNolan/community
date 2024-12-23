@@ -156,6 +156,9 @@ punctuation_words = {
     "slice": "[",
     "dice": "]",
     "rice": "]",
+    "logic and": " && ",
+    "logic pipe": " || ",
+    "logic or": " || ",
 }
 symbol_key_words = {
     "period": ".",
