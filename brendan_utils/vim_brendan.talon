@@ -236,7 +236,7 @@ close debugger:
     key(escape)
     insert(" cdb")
 
-insert scope:
+(insert scope | new scope):
     key(escape)
     insert("A {}")
     key(escape)
