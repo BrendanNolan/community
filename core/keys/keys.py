@@ -181,7 +181,7 @@ symbol_key_words = {
     "minus": "-",
     "dash": "-",
     "equals": "=",
-    "lone plus": "+",
+    "plus": "+",
     "grave": "`",
     "tilde": "~",
     "curly bracket": "{",
