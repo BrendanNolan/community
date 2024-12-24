@@ -13,11 +13,6 @@ leftwards:
 rightwards:
     key(l)
 
-left: key(left)
-right: key(right)
-north: key(up)
-down: key(down)
-
 next: key(ctrl-n)
 preev: key(ctrl-p)
 
