@@ -6,8 +6,6 @@ assign <user.text>$: user.assign(text)
 method <user.text>$: user.method_call(text)
 (mod | module) <user.text>$: user.mod_block(text)
 
-scope: insert("::")
-
 (funk | function) <user.text>$: user.func(text)
 (pub funk | public function | pub function | public funk) <user.text>$: user.pub_func(text)
 

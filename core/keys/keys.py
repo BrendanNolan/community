@@ -161,6 +161,7 @@ punctuation_words = {
     "dice": "]",
     "rice": "]",
     "logic and": " && ",
+    "scope": "::",
     "logic pipe": " || ",
     "logic or": " || ",
 }
