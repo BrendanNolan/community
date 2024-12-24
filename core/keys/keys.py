@@ -138,6 +138,7 @@ punctuation_words = {
     "left paren": "(",
     "R paren": ")",
     # Brendan
+    "semco": ";",
     "dot": ".",
     "prick": ".",
     "punk": ".",
@@ -147,6 +148,8 @@ punctuation_words = {
     "bang": "!",
     "down score": "_",
     "underscore": "_",
+    "under": "_",
+    "you score": "_",
     "round": "(",
     "sound": ")",
     "hound": ")",

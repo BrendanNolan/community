@@ -20,7 +20,6 @@ down: key(down)
 
 next: key(ctrl-n)
 preev: key(ctrl-p)
-(clozer | semicolon): key(;)
 
 binsert:
     key(escape)
