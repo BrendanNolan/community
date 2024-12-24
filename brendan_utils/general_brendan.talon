@@ -22,3 +22,6 @@ del: key(delete)
 leet: insert("leet")
 len: insert("len")
 
+scope: insert("::")
+logic and: insert(" && ")
+logic (pipe | or): insert(" || ")
