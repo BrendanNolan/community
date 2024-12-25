@@ -19,9 +19,6 @@ class Actions:
     def method_call(text: str):
         "Calls method"
 
-    def loop():
-        "Loop"
-
     def while_loop():
         "For loop"
 
@@ -64,12 +61,6 @@ class UserActions:
         l, r = prepare_for_method_call(text)
         actions.insert(to_snake_case(l) + "." + to_snake_case(r) + "()")
         esc("i")
-
-    def loop():
-        actions.insert("loop {}")
-        escape()
-        key(i)
-        enter()
 
     def while_loop():
         actions.insert("while ")

@@ -13,7 +13,11 @@ method <user.text>$: user.method_call(text)
 param <user.text>$: user.param(text)
 
 # Control Flow
-loop: user.loop()
+loop:
+    insert("loop {}")
+    key(escape)
+    key(i)
+    key(enter)
 for loop: user.for_loop()
 while loop: user.while_loop()
 if statement: user.if_statement()
