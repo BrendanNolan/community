@@ -66,16 +66,19 @@ class UserActions:
         esc("i")
 
     def loop():
-        actions.user.insert_between("loop ", " ")
+        actions.insert("loop {}")
+        escape()
+        key(i)
+        enter()
 
     def while_loop():
-        actions.user.insert_between("while ", " ")
+        actions.insert("while ")
 
     def for_loop():
-        actions.user.insert_between("for ", " in  ")
+        actions.user.insert_between("for ", " in")
 
     def if_statement():
-        actions.user.insert_between("if ", " ")
+        actions.insert("if ")
 
     def mod_block(text: str):
         actions.insert("mod " + to_snake_case(text) + " {")
