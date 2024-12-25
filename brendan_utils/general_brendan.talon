@@ -15,7 +15,7 @@ ten:
 newline: insert("\\n")
 
 (trash | backspace): key(backspace)
-del: key(delete)
+(garbage | del): key(delete)
 
 (tab | tabby): key(tab)
 
