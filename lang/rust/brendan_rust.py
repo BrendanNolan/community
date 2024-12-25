@@ -37,9 +37,6 @@ class Actions:
     def func(text: str):
         "Function"
 
-    def pub_func(text: str):
-        "Function"
-
     def assign(text: str):
         "Assign"
 
@@ -86,11 +83,6 @@ class UserActions:
 
     def func(text: str):
         actions.insert("fn " + to_snake_case(text) + "()")
-        escape()
-        actions.insert("i")
-
-    def pub_func(text: str):
-        actions.insert("pub fn " + to_snake_case(text) + "()")
         escape()
         actions.insert("i")
 
