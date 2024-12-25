@@ -210,6 +210,11 @@ lesseek: insert("<=")
 greater: insert(">")
 greatereek: insert(">=")
 
+plus (eek | assign): insert(" += ")
+minus (eek | assign): insert(" -= ")
+percent (eek | assign): insert(" %= ")
+slash (eek | assign): insert(" /= ")
+
 populate:
     key(escape)
     insert("/}")
