@@ -25,3 +25,5 @@ len: insert("len")
 scope: insert("::")
 logic and: insert(" && ")
 logic (pipe | or): insert(" || ")
+
+spacey <user.text>: "{text} "
