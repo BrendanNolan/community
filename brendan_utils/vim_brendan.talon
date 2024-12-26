@@ -246,3 +246,6 @@ close debugger:
     key(escape)
     key(i)
     key(enter)
+
+surround: insert("ysiw")
+surround big: insert("ysiW")
