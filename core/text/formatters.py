@@ -255,14 +255,14 @@ code_formatter_names = {
     "all cap": "ALL_CAPS",
     "all down": "ALL_LOWERCASE",
     "dotted": "DOT_SEPARATED",
-    "dub string": "DOUBLE_QUOTED_STRING",
+    "string": "DOUBLE_QUOTED_STRING",
     "dunder": "DOUBLE_UNDERSCORE",
     "kebab": "DASH_SEPARATED",
     "padded": "SPACE_SURROUNDED_STRING",
     "slasher": "ALL_SLASHES",
     "conga": "SLASH_SEPARATED",
     "smash": "NO_SPACES",
-    "string": "SINGLE_QUOTED_STRING",
+    "sing string": "SINGLE_QUOTED_STRING",
     "constant": "ALL_CAPS,SNAKE_CASE",
 }
 prose_formatter_names = {
