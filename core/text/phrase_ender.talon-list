@@ -2,4 +2,6 @@ list: user.phrase_ender
 -
 
 over: ""
-boom: ""
+break: ""
+is type: " "
+item: ", "
