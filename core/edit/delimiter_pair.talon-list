@@ -12,7 +12,7 @@ list: user.delimiter_pair
 round: ( )
 box: [ ]
 diamond: < >
-curly: { }
+brace pair: { }
 twin: "' '"
 quad: '" "'
 skis: ` `
