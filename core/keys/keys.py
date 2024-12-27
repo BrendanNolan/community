@@ -161,9 +161,9 @@ punctuation_words = {
     "dice": "]",
     "rice": "]",
     "scope": "::",
+    "period": ".",
 }
 symbol_key_words = {
-    "period": ".",
     "point": ".",
     "quote": "'",
     "apostrophe": "'",
