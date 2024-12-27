@@ -5,9 +5,13 @@ language mode.tail ~/.talon/talon.log
 
 # Making Words Available as Commands and as Normal Words
 
-If you go to the core/keys/keys.py file, you will find two lists, one is called `punctuation_words`
-and one is called `symbol_keywords`. The former will always print the symbol and the latter will
-print the symbol when used as a command and the word when used as part of a sentence.
+You can use the symbol_keywords list for symbols and ignore the punctuation_words list;
+most punctuation characters should also end phrases, so you can put them in the
+phrase_enders file.
+
+// If you go to the core/keys/keys.py file, you will find two lists, one is called `punctuation_words`
+// and one is called `symbol_keywords`. The former will always print the symbol and the latter will
+// print the symbol when used as a command and the word when used as part of a sentence.
 
 # Ordinal Numbers
 
