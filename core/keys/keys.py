@@ -226,6 +226,16 @@ symbol_key_words = {
     "percent eek": " %= ",
     "slash eek": " /= ",
     "star eek": " *= ",
+    "is equal": " == ",
+    "is less": " < ",
+    "is lesseek": " <= ",
+    "is greater": " > ",
+    "is greatereek": " >= ",
+    "plus": " + ",
+    "minus": " - ",
+    "slash": "/",
+    "remainder": " % ",
+    "percent": " % "
 }
 
 # make punctuation words also included in {user.symbol_keys}
