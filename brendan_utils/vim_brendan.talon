@@ -188,7 +188,6 @@ temple:
     key(escape)
     key(i)
 
-stuff equality: insert(" == ")
 stuff arrow: insert(" -> ")
 stuff dub arrow: insert(" => ")
 stuff left arrow: insert(" <- ")
