@@ -2,7 +2,6 @@ code.language: rust
 -
 constant <user.text>$: user.let(text)
 variable <user.text>$: user.let_mut(text)
-assign <user.text>$: user.assign(text)
 method <user.text>$: user.method_call(text)
 (mod | module) <user.text>$: user.mod_block(text)
 
