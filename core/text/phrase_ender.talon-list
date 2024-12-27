@@ -54,4 +54,7 @@ minus: " - "
 slash: "/"
 remainder: " % "
 percent: " % "
+scope: "::"
+logic and: " && "
+logic or: " || "
 
