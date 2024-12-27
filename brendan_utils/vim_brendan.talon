@@ -2,7 +2,7 @@ neo vim: insert("nvim .\n")
 
 (escape | stake | steak | scape): key(escape)
 
-leader: key(space)
+(space | pace | leader): key(space)
 
 upwards:
     key(k)
