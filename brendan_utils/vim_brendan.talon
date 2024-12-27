@@ -188,25 +188,6 @@ temple:
     key(escape)
     key(i)
 
-stuff arrow: insert(" -> ")
-stuff dub arrow: insert(" => ")
-stuff left arrow: insert(" <- ")
-
-equality: insert("==")
-arrow: insert("->")
-dub arrow: insert("=>")
-left arrow: insert("<-")
-less: insert("<")
-lesseek: insert("<=")
-greater: insert(">")
-greatereek: insert(">=")
-
-plus eek: insert(" += ")
-minus eek: insert(" -= ")
-(remainder | percent) eek: insert(" %= ")
-slash eek: insert(" /= ")
-star eek: insert(" *= ")
-
 populate:
     key(escape)
     insert("/}")

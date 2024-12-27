@@ -206,9 +206,26 @@ symbol_key_words = {
     "dot": ".",
     "prick": ".",
     "punk": ".",
+    "equality": "==",
+    "less": "<",
+    "lesseek": "<=",
+    "greater": ">",
+    "greatereek": ">=",
+    # Brendan Spaced
     "space": " ",
     "pace": " ",
     "leader": " ",
+    "assign": " = ",
+    "follow": "->",
+    "arrow": " -> ",
+    "dub arrow": " => ",
+    "left arrow": " <- ",
+    "plus eek": " += ",
+    "minus eek": " -= ",
+    "remainder eek": " %= ",
+    "percent eek": " %= ",
+    "slash eek": " /= ",
+    "star eek": " *= ",
 }
 
 # make punctuation words also included in {user.symbol_keys}
