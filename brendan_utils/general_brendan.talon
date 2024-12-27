@@ -18,6 +18,7 @@ newline: insert("\\n")
 (garbage | del): key(delete)
 
 (tab | tabby): key(tab)
+(space | pace | leader): key(space)
 
 leet: insert("leet")
 len: insert("len")

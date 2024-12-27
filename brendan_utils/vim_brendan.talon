@@ -2,8 +2,6 @@ neo vim: insert("nvim .\n")
 
 (escape | stake | steak | scape): key(escape)
 
-(space | pace | leader): key(space)
-
 upwards:
     key(k)
 downwards:
