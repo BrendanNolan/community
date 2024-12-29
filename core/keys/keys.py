@@ -180,6 +180,7 @@ symbol_key_words = {
     "dollar": "$",
     "pound": "£",
     # Brendan
+    "item": ", "
     "semco": ";",
     "question": "?",
     "slash": "/",
