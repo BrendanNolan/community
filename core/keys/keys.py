@@ -140,7 +140,8 @@ punctuation_words = {
 }
 symbol_key_words = {
     "point": ".",
-    "quote": "'",
+    "sing quote": "'",
+    "single quote": "'",
     "apostrophe": "'",
     "L square": "[",
     "left square": "[",
@@ -173,6 +174,7 @@ symbol_key_words = {
     "amper": "&",
     "pipe": "|",
     "dub quote": '"',
+    "quote": '"',
     "quad": '"',
     "twin": "'",
     "double quote": '"',
