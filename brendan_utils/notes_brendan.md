@@ -5,13 +5,13 @@ language mode.tail ~/.talon/talon.log
 
 # Making Words Available as Commands and as Normal Words
 
-You can use the symbol_keywords list for symbols and ignore the punctuation_words list;
-most punctuation characters should also end phrases, so you can put them in the
-phrase_enders file.
+You can use the symbol_keywords list for symbols and ignore the punctuation_words list; most
+punctuation characters should also end phrases, so you can put them in the phrase_enders file.
 
-// If you go to the core/keys/keys.py file, you will find two lists, one is called `punctuation_words`
-// and one is called `symbol_keywords`. The former will always print the symbol and the latter will
-// print the symbol when used as a command and the word when used as part of a sentence.
+// If you go to the core/keys/keys.py file, you will find two lists, one is called
+`punctuation_words` // and one is called `symbol_keywords`. The former will always print the symbol
+and the latter will // print the symbol when used as a command and the word when used as part of a
+sentence.
 
 # Ordinal Numbers
 
@@ -37,6 +37,11 @@ Consider the following line from the community talon config:
 It will honour what you say. So, if you say "inside quotes cap drum", it will write `'cd'`, if you
 say "inside quotes say charlie drum", it will write `'charlie drum'`, if you say "inside quotes
 snake charlie drum", it will write `'charlie_drum'`, etc.
+
+# Capturing Letters vs Text
+
+Capture letters like this: `switch <user.letter>$: user.switch(letter)` Capture words like this:
+`long switch <user.text>$: user.long_switch(text)`
 
 # Outstanding Questions
 
