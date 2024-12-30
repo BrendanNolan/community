@@ -14,6 +14,8 @@ ten:
 
 newline: insert("\\n")
 
+and then: sleep(50ms)
+
 (trash | backspace): key(backspace)
 (garbage | del): key(delete)
 
