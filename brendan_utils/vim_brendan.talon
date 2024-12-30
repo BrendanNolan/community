@@ -149,6 +149,7 @@ change: key(escape c i)
 change around: key(escape c a)
 change line:
     key(escape)
+    sleep(50ms)
     key(c)
     key(c)
 yoink: key(escape y i)
