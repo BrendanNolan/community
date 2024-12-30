@@ -9,78 +9,47 @@ class Actions:
 
     def param(text: str):
         """Inserts a param"""
-
-    def let(text: str):
-        """Inserts a let statement"""
-
-    def let_mut(text: str):
-        """Inserts a let mut statement"""
-
-    def method_call(text: str):
-        """Calls method"""
-
-    def while_loop():
-        """For loop"""
-
-    def for_loop():
-        """For loop"""
-
-    def if_statement():
-        """For loop"""
-
-    def mod_block(text: str):
-        """Module block"""
-
-    def func(text: str):
-        """Function"""
-
-    def assign(text: str):
-        """Assign"""
-
-
-ctx = Context()
-ctx.matches = r"""
-code.language: rust
-"""
-
-
-@ctx.action_class("user")
-class UserActions:
-
-    def param(text: str):
         actions.insert(to_snake_case(text) + ": ")
 
     def let(text: str):
+        """Inserts a let statement"""
         actions.insert("let " + to_snake_case(text) + " = ")
 
     def let_mut(text: str):
+        """Inserts a let mut statement"""
         actions.insert("let mut " + to_snake_case(text) + " = ")
 
-
     def method_call(text: str):
+        """Calls method"""
         l, r = prepare_for_method_call(text)
         actions.insert(to_snake_case(l) + "." + to_snake_case(r) + "()")
         esc("i")
 
     def while_loop():
+        """While loop"""
         actions.insert("while ")
 
     def for_loop():
+        """For loop"""
         actions.user.insert_between("for ", " in")
 
     def if_statement():
+        """For loop"""
         actions.insert("if ")
 
     def mod_block(text: str):
+        """Module block"""
         actions.insert("mod " + to_snake_case(text) + " {")
         enter()
 
     def func(text: str):
+        """Function"""
         actions.insert("fn " + to_snake_case(text) + "()")
         escape()
         actions.insert("i")
 
     def assign(text: str):
+        """Assign"""
         actions.insert(to_snake_case(text) + " = ")
 
 
