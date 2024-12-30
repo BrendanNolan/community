@@ -8,34 +8,34 @@ mod = Module()
 class Actions:
 
     def param(text: str):
-        "Inserts a param"
+        """Inserts a param"""
 
     def let(text: str):
-        "Inserts a let statement"
+        """Inserts a let statement"""
 
     def let_mut(text: str):
-        "Inserts a let mut statement"
+        """Inserts a let mut statement"""
 
     def method_call(text: str):
-        "Calls method"
+        """Calls method"""
 
     def while_loop():
-        "For loop"
+        """For loop"""
 
     def for_loop():
-        "For loop"
+        """For loop"""
 
     def if_statement():
-        "For loop"
+        """For loop"""
 
     def mod_block(text: str):
-        "Module block"
+        """Module block"""
 
     def func(text: str):
-        "Function"
+        """Function"""
 
     def assign(text: str):
-        "Assign"
+        """Assign"""
 
 
 ctx = Context()
