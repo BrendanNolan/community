@@ -16,8 +16,8 @@ right: key(right)
 north: key(up)
 down: key(down)
 
-next: key(ctrl-n)
-preev: key(ctrl-p)
+select next: key(ctrl-n)
+select preev: key(ctrl-p)
 
 binsert:
     key(escape)

@@ -1,4 +1,4 @@
-last command: key(ctrl-k)
+preev command: key(ctrl-k)
 next command: key(ctrl-j)
 to vim: key(alt-e)
 (cd | seedee | seadee): insert("cd ")
