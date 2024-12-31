@@ -180,10 +180,6 @@ fixup:
 selection fixup:
     key(= =)
 
-(call | invoke):
-    insert("()")
-    key(escape)
-    key(i)
 temple:
     insert("<>")
     key(escape)

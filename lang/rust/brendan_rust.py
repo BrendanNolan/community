@@ -25,6 +25,10 @@ class Actions:
         actions.insert(to_snake_case(l) + "." + to_snake_case(r) + "()")
         esc("i")
 
+    def function_call(text: str):
+        """Calls function"""
+        actions.user.insert_between(to_snake_case(text) + "(", ")")
+
     def while_loop():
         """While loop"""
         actions.insert("while ")
