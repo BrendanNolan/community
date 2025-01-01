@@ -19,6 +19,9 @@ vim
 mane: main
 talon
 widget
+something: some
+math some: sum
+math sum: sum
 albert: a
 baldrick: b
 cassandra: c
