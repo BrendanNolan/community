@@ -16,7 +16,7 @@ newline: insert("\\n")
 
 and then: sleep(50ms)
 
-(trash | backspace): key(backspace)
+(trash | backspace | destroy): key(backspace)
 (garbage | del): key(delete)
 
 (tab | tabby): key(tab)

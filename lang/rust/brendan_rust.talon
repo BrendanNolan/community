@@ -28,7 +28,7 @@ return: user.insert_between("return ", ";")
     key(enter)
     key(a)
     insert(" -> ")
-call wrap:
+(call | calling) wrap:
     key(escape)
     insert("ysiw)i")
 
