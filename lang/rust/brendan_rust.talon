@@ -28,6 +28,9 @@ return: user.insert_between("return ", ";")
     key(enter)
     key(a)
     insert(" -> ")
+call wrap:
+    key(escape)
+    insert("ysiw)i")
 
 # Types
 you size: insert("usize")
