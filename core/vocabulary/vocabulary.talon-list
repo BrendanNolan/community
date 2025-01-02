@@ -20,6 +20,15 @@ mane: main
 talon
 widget
 something: some
+literal something: something
+literal nothing: nothing
+nun: none
+nothing: none
+anon: non
+null
+nu: new
+nole: null
+knoll: null
 math some: sum
 math sum: sum
 albert: a
