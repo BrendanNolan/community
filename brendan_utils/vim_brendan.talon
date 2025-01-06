@@ -222,4 +222,4 @@ surround big: insert("ysiW")
 
 toss unsaved:
     key(escape)
-    insert(":edit!")
+    insert(":edit!\n")
