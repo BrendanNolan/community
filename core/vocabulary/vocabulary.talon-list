@@ -19,6 +19,11 @@ vim
 mane: main
 talon
 widget
+vec
+rust vec: vec
+deck: deque
+dee cu: deque
+dee queue: deque
 something: some
 literal something: something
 literal nothing: nothing
