@@ -167,11 +167,15 @@ demi:
     key(A)
     key(";")
     key(escape)
+    insert(":w")
+    key(enter)
 semi:
     key(escape)
     key(A)
     key(";")
     key(escape)
+    insert(":w")
+    key(enter)
     key(o)
 
 fixup:

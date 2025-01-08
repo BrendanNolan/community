@@ -253,7 +253,7 @@ formatters_dict = {f.id: f for f in formatter_list}
 
 # Mapping from spoken phrases to formatter names
 code_formatter_names = {
-    "all cap": "ALL_CAPS",
+    "shouting": "ALL_CAPS",
     "all down": "ALL_LOWERCASE",
     "dotted": "DOT_SEPARATED",
     "string": "DOUBLE_QUOTED_STRING",
