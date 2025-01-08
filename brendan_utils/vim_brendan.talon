@@ -221,6 +221,10 @@ close debugger:
     key(i)
     key(enter)
 
+(call | calling) wrap:
+    key(escape)
+    insert("ysiw)i")
+
 surround: insert("ysiw")
 surround big: insert("ysiW")
 
