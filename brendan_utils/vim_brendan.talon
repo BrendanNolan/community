@@ -236,6 +236,10 @@ command:
     key(escape)
     insert(":")
 
+(hilight | highlight):
+    key(escape)
+    key(shift-v)
+
 copy <number> (before | up)$: user.copy_lines(number, "y", "k", "line")
 copy <number> (after | down)$: user.copy_lines(number, "y", "j", "line")
 copy (state | statement) <number> (before | up)$: user.copy_lines(number, "y", "k", "state")
