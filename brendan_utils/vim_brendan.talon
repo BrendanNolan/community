@@ -75,9 +75,6 @@ piggy:
     key(escape)
     insert("`z")
 
-word: key(escape w)
-back: key(escape b)
-
 search <user.text>:
     key(escape)
     insert("/{text}\\c\n")
@@ -145,6 +142,8 @@ change third arg:
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
 
+change word: key(escape c i w)
+change big word: key(escape c i shift-w)
 change: key(escape c i)
 change around: key(escape c a)
 change line:
@@ -152,15 +151,24 @@ change line:
     sleep(50ms)
     key(c)
     key(c)
+yoink word: key(escape y i w)
+yoink big word: key(escape y i shift-w)
 yoink: key(escape y i)
 yoink around: key(escape y a)
 yoink line:
     key(escape)
     key(y)
     key(y)
+delete word: key(escape d i w)
+delete big word: key(escape d i shift-w)
 delete: key(escape d i)
 delete around: key(escape d a)
 delete line: key(escape d d)
+select word: key(escape v i w)
+select big word: key(escape v i shift-w)
+select: key(escape d i)
+select around: key(escape d a)
+select line: key(escape d d)
 
 demi:
     key(escape)
