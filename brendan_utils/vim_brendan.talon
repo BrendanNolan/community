@@ -231,3 +231,7 @@ surround big: insert("ysiW")
 toss unsaved:
     key(escape)
     insert(":edit!\n")
+
+command:
+    key(escape)
+    insert(":")
