@@ -235,3 +235,12 @@ toss unsaved:
 command:
     key(escape)
     insert(":")
+
+copy line <number> (before | up)$: user.copy_lines(number, "y", "k", "line")
+copy line <number> (after | down)$: user.copy_lines(number, "y", "j", "line")
+copy (state | statement) <number> (before | up)$: user.copy_lines(number, "y", "k", "state")
+copy (state | statement) <number> (after | down)$: user.copy_lines(number, "y", "j", "state")
+cut line <number> (before | up)$: user.copy_lines(number, "d", "k", "line")
+cut line <number> (after | down)$: user.copy_lines(number, "d", "j", "line")
+cut (state | statement) <number> (before | up)$: user.copy_lines(number, "d", "k", "state")
+cut (state | statement) <number> (after | down)$: user.copy_lines(number, "d", "j", "state")
