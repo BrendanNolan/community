@@ -240,6 +240,11 @@ command:
     key(escape)
     key(shift-v)
 
+select whole:
+    key(escape)
+    key(shift-v)
+    insert("/{\n$")
+
 copy <number> (before | up)$: user.copy_lines(number, "y", "k", "line")
 copy <number> (after | down)$: user.copy_lines(number, "y", "j", "line")
 copy (state | statement) <number> (before | up)$: user.copy_lines(number, "y", "k", "state")
