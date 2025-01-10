@@ -23,6 +23,6 @@ class Actions:
             target = "t"
         else:
             # type == "line"
-            target = "action"
+            target = action
         actions.insert(f"{action}{target}")
         actions.insert("`y")
