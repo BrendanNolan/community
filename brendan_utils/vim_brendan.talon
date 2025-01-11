@@ -452,7 +452,7 @@ next statement:
  # select = {
  #   ["i="] = "@assignment.inner",
  #   ["l="] = "@assignment.lhs",
- #   ["a="] = "@assignment.outer",
+ #   ["o="] = "@assignment.outer",
  #   ["r="] = "@assignment.rhs",
  #   ["ib"] = "@block.inner",
  #   ["ab"] = "@block.outer",
