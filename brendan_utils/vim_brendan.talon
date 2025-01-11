@@ -262,35 +262,90 @@ copy (state | statement) <number> (after | down)$: user.copy_lines(number, "y", 
 (cut | destroy) (state | statement) <number> (before | up)$: user.copy_lines(number, "d", "k", "state")
 (cut | destroy) (state | statement) <number> (after | down)$: user.copy_lines(number, "d", "j", "state")
 
- # goto_next_start = {
- #   ["]i="] = "@assignment.inner",
- #   ["]l="] = "@assignment.lhs",
- #   ["]="] = "@assignment.outer",
- #   ["]r="] = "@assignment.rhs",
- #   ["]ib"] = "@block.inner",
- #   ["]b"] = "@block.outer",
- #   ["]ic"] = "@call.inner",
- #   ["]c"] = "@call.outer",
- #   ["]is"] = "@class.inner",
- #   ["]s"] = "@class.outer",
- #   ["]iq"] = "@comment.inner",
- #   ["]q"] = "@comment.outer",
- #   ["]ii"] = "@conditional.inner",
- #   ["]i"] = "@conditional.outer",
- #   ["]if"] = "@function.inner",
- #   ["]f"] = "@function.outer",
- #   ["]il"] = "@loop.inner",
- #   ["]l"] = "@loop.outer",
- #   ["]in"] = "@number.inner",
- #   ["]ia"] = "@parameter.inner",
- #   ["]a"] = "@parameter.outer",
- #   ["]ip"] = "@regex.inner",
- #   ["]p"] = "@regex.outer",
- #   ["]ir"] = "@return.inner",
- #   ["]r"] = "@return.outer",
- #   ["]-"] = { query = "@local.scope", query_group = "locals" },
- #   ["]z"] = { query = "@fold", query_group = "folds" },
- #   ["]t"] = "@statement.outer",
+next assignment inner:
+    key(escape)
+    insert("]i=")
+next assignment lhs:
+    key(escape)
+    insert("]l=")
+next assignment outer:
+    key(escape)
+    insert("]=")
+next assignment rhs:
+    key(escape)
+    insert("]r=")
+next block inner:
+    key(escape)
+    insert("]ib")
+next block outer:
+    key(escape)
+    insert("]b")
+next call inner:
+    key(escape)
+    insert("]ic")
+next call outer:
+    key(escape)
+    insert("]c")
+next class inner:
+    key(escape)
+    insert("]is")
+next class outer:
+    key(escape)
+    insert("]s")
+next comment inner:
+    key(escape)
+    insert("]iq")
+next comment outer:
+    key(escape)
+    insert("]q")
+next conditional inner:
+    key(escape)
+    insert("]ii")
+next conditional outer:
+    key(escape)
+    insert("]i")
+next function inner:
+    key(escape)
+    insert("]if")
+next function outer:
+    key(escape)
+    insert("]f")
+next loop inner:
+    key(escape)
+    insert("]il")
+next loop outer:
+    key(escape)
+    insert("]l")
+next number inner:
+    key(escape)
+    insert("]in")
+next parameter inner:
+    key(escape)
+    insert("]ia")
+next parameter outer:
+    key(escape)
+    insert("]a")
+next regex inner:
+    key(escape)
+    insert("]ip")
+next regex outer:
+    key(escape)
+    insert("]p")
+next return inner:
+    key(escape)
+    insert("]ir")
+next return outer:
+    key(escape)
+    insert("]r")
+next local scope:
+    key(escape)
+    insert("]-")
+next fold:
+    key(escape)
+    insert("]z")
+next statement:
+    key(escape)
+    insert("]t")
  # goto_next_end = {
  #   ["]]i="] = "@assignment.inner",
  #   ["]]l="] = "@assignment.lhs",
