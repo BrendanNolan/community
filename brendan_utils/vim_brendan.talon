@@ -132,12 +132,6 @@ change third arg:
 (new arg | new org | new argument | new orgument | new param | new parameter):
     key(escape)
     insert("/)\ni, ")
-(next arg | next param):
-    key(escape)
-    insert("/,\nw")
-(preev arg | preev param):
-    key(escape)
-    insert("?,\nb")
 
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
@@ -262,82 +256,50 @@ copy (state | statement) <number> (after | down)$: user.copy_lines(number, "y", 
 (cut | destroy) (state | statement) <number> (before | up)$: user.copy_lines(number, "d", "k", "state")
 (cut | destroy) (state | statement) <number> (after | down)$: user.copy_lines(number, "d", "j", "state")
 
-next assignment inner:
-    key(escape)
-    insert("]i=")
-next assignment lhs:
-    key(escape)
-    insert("]l=")
-next assignment outer:
+# NEXT
+next assign:
     key(escape)
     insert("]=")
-next assignment rhs:
+next left assign:
+    key(escape)
+    insert("]l=")
+next right assign:
     key(escape)
     insert("]r=")
-next block inner:
-    key(escape)
-    insert("]ib")
-next block outer:
+next block:
     key(escape)
     insert("]b")
-next call inner:
-    key(escape)
-    insert("]ic")
-next call outer:
+next call:
     key(escape)
     insert("]c")
-next class inner:
-    key(escape)
-    insert("]is")
-next class outer:
+next (struct | class):
     key(escape)
     insert("]s")
-next comment inner:
-    key(escape)
-    insert("]iq")
-next comment outer:
+next comment:
     key(escape)
     insert("]q")
-next conditional inner:
-    key(escape)
-    insert("]ii")
-next conditional outer:
+next (if | conditional):
     key(escape)
     insert("]i")
-next function inner:
-    key(escape)
-    insert("]if")
-next function outer:
+next function:
     key(escape)
     insert("]f")
-next loop inner:
-    key(escape)
-    insert("]il")
-next loop outer:
+next loop:
     key(escape)
     insert("]l")
-next number inner:
+next number:
     key(escape)
     insert("]in")
-next parameter inner:
-    key(escape)
-    insert("]ia")
-next parameter outer:
+next parameter:
     key(escape)
     insert("]a")
-next regex inner:
-    key(escape)
-    insert("]ip")
-next regex outer:
+next regex:
     key(escape)
     insert("]p")
-next return inner:
-    key(escape)
-    insert("]ir")
-next return outer:
+next return:
     key(escape)
     insert("]r")
-next local scope:
+next scope:
     key(escape)
     insert("]-")
 next fold:
@@ -346,6 +308,60 @@ next fold:
 next statement:
     key(escape)
     insert("]t")
+
+# PREV
+(preev | previous) assign:
+    key(escape)
+    insert("[=")
+(preev | previous) left assign:
+    key(escape)
+    insert("[l=")
+(preev | previous) right assign:
+    key(escape)
+    insert("[r=")
+(preev | previous) block:
+    key(escape)
+    insert("[b")
+(preev | previous) call:
+    key(escape)
+    insert("[c")
+(preev | previous) (struct | class):
+    key(escape)
+    insert("[s")
+(preev | previous) comment:
+    key(escape)
+    insert("[q")
+(preev | previous) (if | conditional):
+    key(escape)
+    insert("[i")
+(preev | previous) function:
+    key(escape)
+    insert("[f")
+(preev | previous) loop:
+    key(escape)
+    insert("[l")
+(preev | previous) number:
+    key(escape)
+    insert("[in")
+(preev | previous) parameter:
+    key(escape)
+    insert("[a")
+(preev | previous) regex:
+    key(escape)
+    insert("[p")
+(preev | previous) return:
+    key(escape)
+    insert("[r")
+(preev | previous) scope:
+    key(escape)
+    insert("[-")
+(preev | previous) fold:
+    key(escape)
+    insert("[z")
+(preev | previous) statement:
+    key(escape)
+    insert("[t")
+
  # goto_next_end = {
  #   ["]]i="] = "@assignment.inner",
  #   ["]]l="] = "@assignment.lhs",
@@ -433,7 +449,7 @@ next statement:
  #   ["[[-"] = { query = "@local.scope", query_group = "locals" },
  #   ["[[z"] = { query = "@fold", query_group = "folds" },
  #   ["[[t"] = "@statement.outer",
- # lect = {
+ # select = {
  #   ["i="] = "@assignment.inner",
  #   ["l="] = "@assignment.lhs",
  #   ["o="] = "@assignment.outer",
