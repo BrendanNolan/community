@@ -251,10 +251,10 @@ copy <number> (before | up)$: user.copy_lines(number, "y", "k", "line")
 copy <number> (after | down)$: user.copy_lines(number, "y", "j", "line")
 copy (state | statement) <number> (before | up)$: user.copy_lines(number, "y", "k", "state")
 copy (state | statement) <number> (after | down)$: user.copy_lines(number, "y", "j", "state")
-(cut | destroy) <number> (before | up)$: user.copy_lines(number, "d", "k", "line")
-(cut | destroy) <number> (after | down)$: user.copy_lines(number, "d", "j", "line")
-(cut | destroy) (state | statement) <number> (before | up)$: user.copy_lines(number, "d", "k", "state")
-(cut | destroy) (state | statement) <number> (after | down)$: user.copy_lines(number, "d", "j", "state")
+(delete | cut | destroy) <number> (before | up)$: user.copy_lines(number, "d", "k", "line")
+(delete | cut | destroy) <number> (after | down)$: user.copy_lines(number, "d", "j", "line")
+(delete | cut | destroy) (state | statement) <number> (before | up)$: user.copy_lines(number, "d", "k", "state")
+(delete | cut | destroy) (state | statement) <number> (after | down)$: user.copy_lines(number, "d", "j", "state")
 
 # NEXT
 next assign:
