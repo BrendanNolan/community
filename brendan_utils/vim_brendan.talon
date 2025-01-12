@@ -535,7 +535,10 @@ change fold: user.make_selection("c", "z")
 select (statement | state): user.make_selection("v", "t")
 (cut | destroy | delete) (statement | state): user.make_selection("d", "t")
 copy (statement | state): user.make_selection("y", "t")
-change (statement | state): user.make_selection("c", "t")
+change (statement | state):
+    user.make_selection("c", "t")
+    key(escape)
+    key(shift-o)
  # swap_next = {
  #   [">i="] = "@assignment.inner",
  #   [">l="] = "@assignment.lhs",
