@@ -391,35 +391,6 @@ next statement:
  #   ["]]-"] = { query = "@local.scope", query_group = "locals" },
  #   ["]]z"] = { query = "@fold", query_group = "folds" },
  #   ["]]t"] = "@statement.outer",
- # goto_previous_start = {
- #   ["[i="] = "@assignment.inner",
- #   ["[l="] = "@assignment.lhs",
- #   ["[="] = "@assignment.outer",
- #   ["[r="] = "@assignment.rhs",
- #   ["[ib"] = "@block.inner",
- #   ["[b"] = "@block.outer",
- #   ["[ic"] = "@call.inner",
- #   ["[c"] = "@call.outer",
- #   ["[is"] = "@class.inner",
- #   ["[s"] = "@class.outer",
- #   ["[iq"] = "@comment.inner",
- #   ["[q"] = "@comment.outer",
- #   ["[ii"] = "@conditional.inner",
- #   ["[i"] = "@conditional.outer",
- #   ["[if"] = "@function.inner",
- #   ["[f"] = "@function.outer",
- #   ["[il"] = "@loop.inner",
- #   ["[l"] = "@loop.outer",
- #   ["[in"] = "@number.inner",
- #   ["[ia"] = "@parameter.inner",
- #   ["[a"] = "@parameter.outer",
- #   ["[ip"] = "@regex.inner",
- #   ["[p"] = "@regex.outer",
- #   ["[ir"] = "@return.inner",
- #   ["[r"] = "@return.outer",
- #   ["[-"] = { query = "@local.scope", query_group = "locals" },
- #   ["[z"] = { query = "@fold", query_group = "folds" },
- #   ["[t"] = "@statement.outer",
  # goto_previous_end = {
  #   ["[[i="] = "@assignment.inner",
  #   ["[[l="] = "@assignment.lhs",
@@ -450,34 +421,34 @@ next statement:
  #   ["[[z"] = { query = "@fold", query_group = "folds" },
  #   ["[[t"] = "@statement.outer",
  # select = {
- #   ["i="] = "@assignment.inner",
- #   ["l="] = "@assignment.lhs",
- #   ["o="] = "@assignment.outer",
- #   ["r="] = "@assignment.rhs",
- #   ["ib"] = "@block.inner",
- #   ["ab"] = "@block.outer",
- #   ["ic"] = "@call.inner",
- #   ["ac"] = "@call.outer",
- #   ["is"] = "@class.inner",
- #   ["as"] = "@class.outer",
- #   ["iq"] = "@comment.inner",
- #   ["aq"] = "@comment.outer",
- #   ["ii"] = "@conditional.inner",
- #   ["ai"] = "@conditional.outer",
- #   ["if"] = "@function.inner",
- #   ["af"] = "@function.outer",
- #   ["il"] = "@loop.inner",
- #   ["al"] = "@loop.outer",
- #   ["in"] = "@number.inner",
- #   ["ia"] = "@parameter.inner",
- #   ["aa"] = "@parameter.outer",
- #   ["ip"] = "@regex.inner",
- #   ["ap"] = "@regex.outer",
- #   ["ir"] = "@return.inner",
- #   ["ar"] = "@return.outer",
- #   ["-"] = { query = "@local.scope", query_group = "locals" },
- #   ["z"] = { query = "@fold", query_group = "folds" },
- #   ["t"] = "@statement.outer",
+select assignment inner: user.make_selection("v", "i=")
+select assignment lhs: user.make_selection("v", "l=")
+select assignment outer: user.make_selection("v", "o=")
+select assignment rhs: user.make_selection("v", "r=")
+select block inner: user.make_selection("v", "ib")
+select block outer: user.make_selection("v", "ab")
+select call inner: user.make_selection("v", "ic")
+select call outer: user.make_selection("v", "ac")
+select class inner: user.make_selection("v", "is")
+select class outer: user.make_selection("v", "as")
+select comment inner: user.make_selection("v", "iq")
+select comment outer: user.make_selection("v", "aq")
+select conditional inner: user.make_selection("v", "ii")
+select conditional outer: user.make_selection("v", "ai")
+select function inner: user.make_selection("v", "if")
+select function outer: user.make_selection("v", "af")
+select loop inner: user.make_selection("v", "il")
+select loop outer: user.make_selection("v", "al")
+select number inner: user.make_selection("v", "in")
+select parameter inner: user.make_selection("v", "ia")
+select parameter outer: user.make_selection("v", "aa")
+select regex inner: user.make_selection("v", "ip")
+select regex outer: user.make_selection("v", "ap")
+select return inner: user.make_selection("v", "ir")
+select return outer: user.make_selection("v", "ar")
+select local scope: user.make_selection("v", "-")
+select fold: user.make_selection("v", "z")
+select statement outer: user.make_selection("v", "t")
  # swap_next = {
  #   [">i="] = "@assignment.inner",
  #   [">l="] = "@assignment.lhs",

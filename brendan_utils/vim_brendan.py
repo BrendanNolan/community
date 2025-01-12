@@ -26,3 +26,8 @@ class Actions:
             target = action
         actions.insert(f"{action}{target}")
         actions.insert("`y")
+
+    def make_selection(action: str, command: str):
+        # action is y,d,c,v, with the usual vim meaning
+        escape()
+        actions.insert(f"{action}{command}")
