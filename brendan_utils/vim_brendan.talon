@@ -290,7 +290,7 @@ next loop:
 next number:
     key(escape)
     insert("]in")
-next parameter:
+next (parameter | param | org | arg):
     key(escape)
     insert("]a")
 next regex:
@@ -343,7 +343,7 @@ next statement:
 (preev | previous) number:
     key(escape)
     insert("[in")
-(preev | previous) parameter:
+(preev | previous) (parameter | param | org | arg):
     key(escape)
     insert("[a")
 (preev | previous) regex:
@@ -497,14 +497,14 @@ select in number: user.make_selection("v", "in")
 (cut | destroy | delete) in number: user.make_selection("d", "in")
 copy in number: user.make_selection("y", "in")
 change in number: user.make_selection("c", "in")
-select in parameter: user.make_selection("v", "ia")
-(cut | destroy | delete) in parameter: user.make_selection("d", "ia")
-copy in parameter: user.make_selection("y", "ia")
-change in parameter: user.make_selection("c", "ia")
-select around parameter: user.make_selection("v", "aa")
-(cut | destroy | delete) around parameter: user.make_selection("d", "aa")
-copy around parameter: user.make_selection("y", "aa")
-change around parameter: user.make_selection("c", "aa")
+select (parameter | param | org | arg): user.make_selection("v", "ia")
+(cut | destroy | delete) (parameter | param | org | arg): user.make_selection("d", "ia")
+copy (parameter | param | org | arg): user.make_selection("y", "ia")
+change (parameter | param | org | arg): user.make_selection("c", "ia")
+select around (parameter | param | org | arg): user.make_selection("v", "aa")
+(cut | destroy | delete) around (parameter | param | org | arg): user.make_selection("d", "aa")
+copy around (parameter | param | org | arg): user.make_selection("y", "aa")
+change around (parameter | param | org | arg): user.make_selection("c", "aa")
 select in regex: user.make_selection("v", "ip")
 (cut | destroy | delete) in regex: user.make_selection("d", "ip")
 copy in regex: user.make_selection("y", "ip")
