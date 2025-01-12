@@ -11,6 +11,9 @@ leftwards:
 rightwards:
     key(l)
 
+above: key(escape shift-o)
+below: key(escape o)
+
 left: key(left)
 right: key(right)
 north: key(up)
