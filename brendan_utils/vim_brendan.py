@@ -28,6 +28,7 @@ class Actions:
         actions.insert("`y")
 
     def make_selection(action: str, command: str):
+        """Makes a copy,delete,change, or select selection"""
         # action is y,d,c,v, with the usual vim meaning
         escape()
         actions.insert(f"{action}{command}")
