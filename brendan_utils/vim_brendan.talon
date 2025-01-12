@@ -305,7 +305,7 @@ next scope:
 next fold:
     key(escape)
     insert("]z")
-next statement:
+next (statement | state):
     key(escape)
     insert("]t")
 
@@ -358,7 +358,7 @@ next statement:
 (preev | previous) fold:
     key(escape)
     insert("[z")
-(preev | previous) statement:
+(preev | previous) (statement | state):
     key(escape)
     insert("[t")
 
@@ -529,10 +529,10 @@ select fold: user.make_selection("v", "z")
 (cut | destroy | delete) fold: user.make_selection("d", "z")
 copy fold: user.make_selection("y", "z")
 change fold: user.make_selection("c", "z")
-select around statement: user.make_selection("v", "t")
-(cut | destroy | delete) around statement: user.make_selection("d", "t")
-copy around statement: user.make_selection("y", "t")
-change around statement: user.make_selection("c", "t")
+select (statement | state): user.make_selection("v", "t")
+(cut | destroy | delete) (statement | state): user.make_selection("d", "t")
+copy (statement | state): user.make_selection("y", "t")
+change (statement | state): user.make_selection("c", "t")
  # swap_next = {
  #   [">i="] = "@assignment.inner",
  #   [">l="] = "@assignment.lhs",
