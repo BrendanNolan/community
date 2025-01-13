@@ -22,8 +22,9 @@ class Actions:
     def method_call(text: str):
         """Calls method"""
         l, r = prepare_for_method_call(text)
-        actions.insert(to_snake_case(l) + "." + to_snake_case(r) + "()")
-        esc("i")
+        actions.insert(to_snake_case(l) + "." + to_snake_case(r))
+        if r != "await":
+          actions.user.insert_between("(", ")")
 
     def function_call(text: str):
         """Calls function"""
