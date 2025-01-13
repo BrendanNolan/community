@@ -1,3 +1,5 @@
+bank: insert("")
+
 zero: key(0)
 one: key(1)
 two: key(2)
