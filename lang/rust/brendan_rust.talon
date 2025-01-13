@@ -3,7 +3,7 @@ code.language: rust
 constant <user.text>$: user.let(text)
 variable <user.text>$: user.let_mut(text)
 method <user.text>$: user.method_call(text)
-(call | calling | invoke) <user.text>$: user.function_call(text)
+(call | calling) <user.text>$: user.function_call(text)
 (mod | module) <user.text>$: user.mod_block(text)
 
 (funk | function | funk) <user.text>$: user.func(text)

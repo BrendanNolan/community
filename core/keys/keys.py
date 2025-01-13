@@ -193,6 +193,7 @@ symbol_key_words = {
     "you score": "_",
     "paren": "(",
     "darren": ")",
+    "invoke": "(",
     "round": "(",
     "sound": ")",
     "hound": ")",
