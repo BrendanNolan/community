@@ -132,7 +132,7 @@ change third arg:
     key(escape)
     insert("/(\n/,\nw/,\nwcia")
 
-(new arg | new org | new argument | new orgument | new param | new parameter):
+new (arg | org | argument | orgument | param | parameter):
     key(escape)
     insert("/)\ni, ")
 
