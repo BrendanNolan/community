@@ -435,10 +435,7 @@ change left (assignment | assign): user.make_selection("c", "l=")
 select (assignment | assign): user.make_selection("v", "o=")
 (cut | destroy | delete) (assignment | assign): user.make_selection("d", "o=")
 copy (assignment | assign): user.make_selection("y", "o=")
-change (assignment | assign):
-    user.make_selection("c", "o=")
-    key(escape)
-    key(shift-o)
+change (assignment | assign): user.make_selection("c", "o=")
 select right (assignment | assign): user.make_selection("v", "r=")
 (cut | destroy | delete) right (assignment | assign): user.make_selection("d", "r=")
 copy right (assignment | assign): user.make_selection("y", "r=")
@@ -538,10 +535,7 @@ change fold: user.make_selection("c", "z")
 select (statement | state): user.make_selection("v", "t")
 (cut | destroy | delete) (statement | state): user.make_selection("d", "t")
 copy (statement | state): user.make_selection("y", "t")
-change (statement | state):
-    user.make_selection("c", "t")
-    key(escape)
-    key(shift-o)
+change (statement | state): user.make_selection("c", "t")
  # swap_next = {
  #   [">i="] = "@assignment.inner",
  #   [">l="] = "@assignment.lhs",
