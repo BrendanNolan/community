@@ -1,4 +1,5 @@
 neo vim: insert("nvim .\n")
+open neo vim: insert("nvim ")
 
 (escape | stake | steak | scape): key(escape)
 
