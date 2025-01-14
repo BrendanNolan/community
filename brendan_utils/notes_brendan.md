@@ -51,3 +51,9 @@ Can I make formatters ("snake", "kebob" etc) respect my `punctuation_words` list
 command, it still prints `_dot_`.
 
 Try saying "no space hello underscore world dot how underscore are underscore you"
+
+# TODO
+- Add cope as a synonym for scope
+- Fixed the ascend and descend commands
+- Add first parameter and second parameter and change first parameter and change
+  second parameter commands.
