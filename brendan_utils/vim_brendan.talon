@@ -79,6 +79,14 @@ piggy:
     key(escape)
     insert("`z")
 
+goplace <user.text>:
+    key(escape)
+    insert("/{text}\\c\n")
+    insert("ciw")
+replace <user.text>:
+    key(escape)
+    insert("?{text}\\c\n")
+    insert("ciw")
 search <user.text>:
     key(escape)
     insert("/{text}\\c\n")
