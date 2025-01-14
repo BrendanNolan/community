@@ -306,9 +306,7 @@ next loop:
 next number:
     key(escape)
     insert("]in")
-next (parameter | param | org | arg):
-    key(escape)
-    insert("]a")
+next (parameter | param | org | arg): user.next_param()
 next regex:
     key(escape)
     insert("]p")

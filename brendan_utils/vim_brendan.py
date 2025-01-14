@@ -32,3 +32,9 @@ class Actions:
         # action is y,d,c,v, with the usual vim meaning
         escape()
         actions.insert(f"{action}{command}")
+
+    def next_param():
+        escape()
+        ctions.insert("]a")
+        ctions.sleep("20ms")
+        ctions.insert(" gc")
