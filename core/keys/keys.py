@@ -217,7 +217,6 @@ symbol_key_words = {
     "slash": "/",
     # Brendan Spaced
     "space": " ",
-    "pace": " ",
     "leader": " ",
 }
 
