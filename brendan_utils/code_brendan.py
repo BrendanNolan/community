@@ -179,5 +179,35 @@ symbols = {
 @mod.action_class
 class Actions:
     def smart(text: str, init_formatter: str):
-        current_formatter = init_formatter
+        assert(init_formatter in {"snake", "hammer", "spaced"})
+        text = text.lower()
+        words = text.split(" ")
+        result = ""
+        if init_formatter == "snake":
+            for i, s in enumerate(words):
+                if s in symbols:
+                    result += symbols[s]
+                else:
+                    if i > 0 and words[i - 1] not in symbols:
+                        result += "_"
+                    result += s
+        elif init_formatter == "spaced":
+            for i, s in enumerate(words):
+                if s in symbols:
+                    result += symbols[s]
+                else:
+                    if i > 0 and words[i - 1] not in symbols:
+                        result += " "
+                    result += s
+        elif init_formatter == "hammer":
+            capitalize_next = True
+            for i, s in enumerate(strings):
+                if s in symbols:
+                    result += symbols[s]
+                else:
+                    if capitalize_next:
+                        result += s.capitalize()
+                    else:
+                        result += s.lower()
+                    capitalize_next = True if s not in symbols else False
 
