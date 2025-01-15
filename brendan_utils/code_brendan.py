@@ -211,4 +211,5 @@ class Actions:
                     else:
                         result += s.lower()
                     capitalize_next = True if s not in symbols else False
+        actions.insert(result)
 
