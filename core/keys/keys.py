@@ -107,7 +107,7 @@ ctx = Context()
 
 # `punctuation_words` is for words you want available BOTH in dictation and as key names in command mode.
 # `symbol_key_words` is for key names that should be available in command mode, but NOT during dictation.
-punctuation_words = {
+symbol_key_words = {
     # TODO: I'm not sure why we need these, I think it has something to do with
     # Dragon. Possibly it has been fixed by later improvements to talon? -rntz
     "`": "`",
@@ -137,8 +137,6 @@ punctuation_words = {
     "L paren": "(",
     "left paren": "(",
     "R paren": ")",
-}
-symbol_key_words = {
     "point": ".",
     "sing quote": "'",
     "single quote": "'",
@@ -219,6 +217,7 @@ symbol_key_words = {
     "space": " ",
     "leader": " ",
 }
+punctuation_words = {}
 
 # make punctuation words also included in {user.symbol_keys}
 symbol_key_words.update(punctuation_words)
