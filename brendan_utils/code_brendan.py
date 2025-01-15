@@ -179,6 +179,7 @@ symbols = {
 @mod.action_class
 class Actions:
     def smart(text: str, init_formatter: str):
+        """My attempt at a formatter that does what I want most of the time"""
         assert(init_formatter in {"snake", "hammer", "spaced"})
         text = text.lower()
         words = text.split(" ")
