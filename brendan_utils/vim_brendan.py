@@ -34,6 +34,7 @@ class Actions:
         actions.insert(f"{action}{command}")
 
     def next_param():
+        """next param"""
         escape()
         ctions.insert("]a")
         ctions.sleep("20ms")
