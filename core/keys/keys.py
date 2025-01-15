@@ -206,6 +206,7 @@ symbol_key_words = {
     "period": ".",
     "dot": ".",
     "prick": ".",
+    "brick": ".",
     "punk": ".",
     "equality": "==",
     "less": "<",
