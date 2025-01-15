@@ -112,6 +112,7 @@ symbols = {
     "scope": "::",
     "period": ".",
     "dot": ".",
+    "don't": ".",
     "prick": ".",
     "brick": ".",
     "punk": ".",
