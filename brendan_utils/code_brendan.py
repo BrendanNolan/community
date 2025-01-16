@@ -96,6 +96,8 @@ symbols = {
     "darren": ")",
     "invoke": "(",
     "invokes": "(",
+    "invoked": "(",
+    "invoker": "(",
     "call": "(",
     "calling": "(",
     "bubble": "()",
