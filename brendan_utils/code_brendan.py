@@ -36,6 +36,8 @@ symbols = {
     # Currencies
     "dollar sign": "$",
     "pound sign": "£",
+    # Symbols
+    "ref": "&",
     "hyphen": "-",
     "L paren": "(",
     "left paren": "(",
@@ -186,6 +188,16 @@ symbols = {
     "scope": "::",
     "logic and": " && ",
     "logic or": " || ",
+    # keywords
+    "let": "let ",
+    "mut": "mut ",
+    "mute": "mut ",
+    "if": "if ",
+    "if statement": "if ",
+    "for": "for ",
+    "for loop": "for ",
+    "while": "while ",
+    "while loop": "while ",
 }
 
 @mod.action_class
