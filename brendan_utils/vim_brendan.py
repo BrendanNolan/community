@@ -1,8 +1,6 @@
 from talon import Context, Module, actions
 import re
 
-from brendan_formatters import *
-
 mod = Module()
 
 
@@ -43,9 +41,27 @@ class Actions:
         ctions.insert(" gc")
 
     def buffer(text):
+        """Tries to open a buffer automatically from its name by searching the smashed
+        text in telescope"""
         escape()
         actions.insert(" ff")
         if text == "":
             return
         actions.insert(to_smashed_lower(text))
         enter()
+
+
+def to_snake_case(text):
+    # Replace spaces or hyphens with underscores
+    text = re.sub(r"[\s\-]+", "_", text)
+    # Add underscores before uppercase letters
+    text = re.sub(r"([a-z])([A-Z])", r"\1_\2", text)
+    return text.lower()
+
+
+def to_upper_camel(text):
+    return ''.join(word.capitalize() for word in re.split(r'[ _-]+', text))
+
+
+def to_smashed_lower(text):
+    return ''.join(word.lower() for word in re.split(r'[ _-]+', text))
