@@ -97,9 +97,11 @@ replace <user.text>:
     insert("ciw")
 search <user.text>:
     key(escape)
+    insert("0")
     insert("/{text}\\c\n")
 birch <user.text>:
     key(escape)
+    insert("0")
     insert("?{text}\\c\n")
 
 undo: key(escape u)
