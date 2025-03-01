@@ -249,8 +249,12 @@ close debugger:
     key(escape)
     insert("ysiw)i")
 
-surround: insert("ysiw")
-surround big: insert("ysiW")
+surround:
+    key(escape)
+    insert("ysiw")
+surround big:
+    key(escape)
+    insert("ysiW")
 
 toss unsaved:
     key(escape)
