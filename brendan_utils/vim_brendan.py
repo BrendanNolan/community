@@ -40,7 +40,7 @@ class Actions:
         ctions.sleep("20ms")
         ctions.insert(" gc")
 
-    def buffer(text):
+    def buffer(text: str):
         """Tries to open a buffer automatically from its name by searching the smashed
         text in telescope"""
         escape()
