@@ -1,39 +1,39 @@
-teemux zero:
+(teemux | tux | tucks) zero:
     key(ctrl-g)
     key(0)
-teemux one:
+(teemux | tux | tucks) one:
     key(ctrl-g)
     key(1)
-teemux two:
+(teemux | tux | tucks) two:
     key(ctrl-g)
     key(2)
-teemux three:
+(teemux | tux | tucks) three:
     key(ctrl-g)
     key(3)
-teemux four:
+(teemux | tux | tucks) four:
     key(ctrl-g)
     key(4)
-teemux five:
+(teemux | tux | tucks) five:
     key(ctrl-g)
     key(5)
-teemux six:
+(teemux | tux | tucks) six:
     key(ctrl-g)
     key(6)
-teemux seven:
+(teemux | tux | tucks) seven:
     key(ctrl-g)
     key(7)
-teemux eight:
+(teemux | tux | tucks) eight:
     key(ctrl-g)
     key(8)
-teemux nine:
+(teemux | tux | tucks) nine:
     key(ctrl-g)
     key(9)
-teemux ten:
+(teemux | tux | tucks) ten:
     key(ctrl-g)
     key(10)
-teemux search:
+(teemux | tux | tucks) search:
     key(ctrl-g)
     key(y)
-teemux look:
+(teemux | tux | tucks) look:
     key(ctrl-g)
     key(o)
