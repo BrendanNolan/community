@@ -105,9 +105,8 @@ birch <user.text>:
 undo: key(escape u)
 redo: key(escape ctrl-r)
 
-(buffer | find a file):
-    key(escape)
-    insert(" ff")
+(buf | buff | buffer | find a file) <user.text>:
+    user.buffer(text)
 vim grep:
     key(escape)
     insert(" gf")

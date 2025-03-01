@@ -18,6 +18,8 @@ newline: insert("\\n")
 
 and then: sleep(50ms)
 
+bird <user.word>: user.bird(word)
+
 (trash | backspace | destroy): key(backspace)
 (garbage | del): key(delete)
 

@@ -1,6 +1,8 @@
 from talon import Context, Module, actions
 import re
 
+from brendan_formatters import *
+
 mod = Module()
 
 
@@ -39,3 +41,11 @@ class Actions:
         ctions.insert("]a")
         ctions.sleep("20ms")
         ctions.insert(" gc")
+
+    def buffer(text):
+        escape()
+        actions.insert(" ff")
+        if text == "":
+            return
+        actions.insert(to_smashed_lower(text))
+        enter()
