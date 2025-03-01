@@ -260,7 +260,7 @@ toss unsaved:
     key(escape)
     insert(":edit!\n")
 
-command:
+instruct:
     key(escape)
     insert(":")
 
