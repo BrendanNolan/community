@@ -1,4 +1,4 @@
-from talon import Module
+from talon import Context, Module, actions
 
 mod = Module()
 
@@ -6,4 +6,4 @@ mod = Module()
 class Actions:
     def bird(text: str):
         """Capitalize single word"""
-        return text.capitalize()
+        actions.insert(text.capitalize())
