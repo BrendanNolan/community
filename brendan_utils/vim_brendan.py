@@ -50,6 +50,16 @@ class Actions:
         actions.insert(to_smashed_lower(text))
         enter()
 
+    def north(number: int):
+        """ Go up"""
+        escape()
+        actions.insert(f"{number}k0")
+
+    def south(number: int):
+        """ Go down"""
+        escape()
+        actions.insert(f"{number}j0")
+
 
 def to_snake_case(text):
     # Replace spaces or hyphens with underscores

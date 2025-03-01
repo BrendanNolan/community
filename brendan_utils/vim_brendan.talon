@@ -25,8 +25,8 @@ below: key(escape o)
 
 left: key(left)
 right: key(right)
-north: key(up)
-down: key(down)
+north <number>: user.north(number)
+south <number>: user.south(number)
 
 select next: key(ctrl-n)
 select preev: key(ctrl-p)
