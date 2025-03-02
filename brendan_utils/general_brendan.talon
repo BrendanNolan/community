@@ -39,7 +39,7 @@ spacey <user.text>: "{text} "
 assign: insert(" = ")
 follow: insert("->")
 arrow: insert(" -> ")
-dub arrow: insert(" => ")
+(eek arrow | eekarrow | dub arrow): insert(" => ")
 left arrow: insert(" <- ")
 plus (equal | eek): insert(" += ")
 minus (equal | eek): insert(" -= ")
