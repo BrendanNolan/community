@@ -29,8 +29,8 @@ if statement: user.if_statement()
 return: user.insert_between("return ", ";")
 (insert | add) return type:
     key(escape)
-    insert("/)")
-    key(enter)
+    insert("?fn\n")
+    insert("/(\n%")
     key(a)
     insert(" -> ")
 
