@@ -12,6 +12,11 @@ method <user.text>$: user.method_call(text)
 
 param <user.text>$: user.param(text)
 
+# Keywords
+
+self: insert("self")
+big self: insert("Self")
+
 # Control Flow
 loop:
     insert("loop {}")
