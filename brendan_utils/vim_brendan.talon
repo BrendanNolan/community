@@ -31,13 +31,13 @@ south <number>: user.south(number)
 select next: key(ctrl-n)
 select preev: key(ctrl-p)
 
-binsert:
+(climb | clime | binsert):
     key(escape)
     key(I)
-kinsert:
+(fall | kinsert):
     key(escape)
     insert("A")
-finsert:
+(shunt | finsert | chant):
     key(escape)
     insert("A ")
 squeeze:
@@ -119,7 +119,7 @@ file search:
 fugitive:
     key(escape)
     insert(" gg")
-(disk | vim write | editor write | ritter | writter):
+(disk | save | vim write | editor write | ritter | writter):
     key(escape)
     insert(":w")
     key(enter)
