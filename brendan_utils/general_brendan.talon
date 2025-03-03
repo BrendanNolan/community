@@ -14,8 +14,6 @@ ten:
     key(1)
     key(0)
 
-newline: insert("\\n")
-
 and then: sleep(50ms)
 
 bird <user.word>: user.bird(word)
