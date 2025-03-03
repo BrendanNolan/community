@@ -169,6 +169,7 @@ symbols = {
     "follow": "->",
     "arrow": " -> ",
     "dubarrow": " => ",
+    "matcharow": " => ",
     "add": " + ",
     "subtract": " - ",
     "remainder": " % ",
