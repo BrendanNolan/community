@@ -137,8 +137,6 @@ punctuation_words = {
     "L paren": "(",
     "left paren": "(",
     "R paren": ")",
-}
-symbol_key_words = {
     "point": ".",
     "sing quote": "'",
     "single quote": "'",
@@ -220,6 +218,7 @@ symbol_key_words = {
     "pace": " ",
     "leader": " ",
 }
+symbol_key_words = punctuation_words
 
 # make punctuation words also included in {user.symbol_keys}
 symbol_key_words.update(punctuation_words)
