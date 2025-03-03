@@ -60,6 +60,15 @@ class Actions:
         escape()
         actions.insert(f"{number}j0")
 
+    def surround(the_character: str, big: int):
+        """Wrapping text"""
+        word_string = "w"
+        if big:
+            word_string = "W"
+        escape()
+        actions.insert(f"ysi{word_string}{the_character}")
+        actions.insert("i")
+
 
 def to_snake_case(text):
     # Replace spaces or hyphens with underscores

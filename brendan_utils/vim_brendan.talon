@@ -245,16 +245,10 @@ close debugger:
     key(i)
     key(enter)
 
-(call | calling) wrap:
-    key(escape)
-    insert("ysiw)i")
-
-surround:
-    key(escape)
-    insert("ysiw")
-surround big:
-    key(escape)
-    insert("ysiW")
+surround <user.letter>:
+    user.surround(letter, 0)
+(big surround | surround big) <user.letter>:
+    user.surround(letter, 1)
 
 toss unsaved:
     key(escape)
