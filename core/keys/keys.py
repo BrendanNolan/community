@@ -197,6 +197,8 @@ symbol_key_words = {
     "hound": ")",
     "squirrel": "{",
     "squirrely": "{",
+    "squiggle": "{",
+    "piggle": "}",
     "girl": "}",
     "girly": "}",
     "slice": "[",

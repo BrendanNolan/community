@@ -113,6 +113,8 @@ symbols = {
     "hound": ")",
     "squirrel": "{",
     "squirrely": "{",
+    "squiggle": "{",
+    "piggle": "}",
     "girl": "}",
     "girly": "}",
     "slice": "[",
