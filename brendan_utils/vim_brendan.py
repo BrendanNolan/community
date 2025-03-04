@@ -69,6 +69,17 @@ class Actions:
         actions.insert(f"ysi{word_string}{the_character}")
         actions.insert("i")
 
+    def insert_line_up(number: int):
+        """Insert line up"""
+        escape()
+        actions.insert(f"{number}ko")
+
+    def insert_line_down(number: int):
+        """Insert line down"""
+        escape()
+        actions.insert(f"{number}jo")
+
+
 
 def to_snake_case(text):
     # Replace spaces or hyphens with underscores

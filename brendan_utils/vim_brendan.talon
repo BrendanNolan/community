@@ -158,6 +158,12 @@ new (arg | org | argument | orgument | param | parameter):
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
 
+drip <number>: user.insert_line_up(number)
+drop <number>: user.insert_line_down(number)
+head: key(escape b i)
+tail: key(escape e a)
+big head: key(escape shift-b i)
+big tail: key(escape shift-e a)
 change word: key(escape c i w)
 change big word: key(escape c i shift-w)
 change: key(escape c i)
