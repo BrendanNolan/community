@@ -127,7 +127,7 @@ punctuation_words = {
     "hash sign": "#",
     "number sign": "#",
     "percent sign": "%",
-    "at sign": "@",
+    "at symbol": "@",
     "and sign": "&",
     "ampersand": "&",
     # Currencies
@@ -207,6 +207,7 @@ punctuation_words = {
     "dot": ".",
     "prick": ".",
     "punk": ".",
+    "point": ".",
     "equality": "==",
     "less": "<",
     "lesseek": "<=",
