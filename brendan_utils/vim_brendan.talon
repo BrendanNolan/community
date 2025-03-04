@@ -255,10 +255,15 @@ close debugger:
     key(i)
     key(enter)
 
-surround <user.letter>:
-    user.surround(letter, 0)
-(big surround | surround big) <user.letter>:
-    user.surround(letter, 1)
+surround:
+    user.surround(0)
+(big surround | surround big):
+    user.surround(1)
+
+funk surround: user.surround_special(")", 0)
+funk (big surround | surround big): user.surround_special("(", 1)
+temple surround: user.surround_special(">", 0)
+temple (big surround | surround big): user.surround_special("<", 1)
 
 toss unsaved:
     key(escape)

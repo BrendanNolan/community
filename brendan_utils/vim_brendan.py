@@ -36,9 +36,9 @@ class Actions:
     def next_param():
         """next param"""
         escape()
-        ctions.insert("]a")
-        ctions.sleep("20ms")
-        ctions.insert(" gc")
+        actions.insert("]a")
+        actions.sleep("20ms")
+        actions.insert(" gc")
 
     def buffer(text: str):
         """Tries to open a buffer automatically from its name by searching the smashed
@@ -60,7 +60,15 @@ class Actions:
         escape()
         actions.insert(f"{number}j0")
 
-    def surround(the_character: str, big: int):
+    def surround(big: int):
+        """Wrapping text"""
+        word_string = "w"
+        if big:
+            word_string = "W"
+        escape()
+        actions.insert(f"ysi{word_string}")
+
+    def surround_special(the_character: str, big: int):
         """Wrapping text"""
         word_string = "w"
         if big:
