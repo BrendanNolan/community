@@ -269,6 +269,8 @@ temple (big surround | surround big): user.surround_special("<", 1)
 toss unsaved:
     key(escape)
     insert(":edit!\n")
+    sleep(25ms)
+    key(enter)
 
 instruct:
     key(escape)
