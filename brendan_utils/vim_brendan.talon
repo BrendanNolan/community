@@ -159,10 +159,10 @@ new (arg | org | argument | orgument | param | parameter):
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
 
-forward: key(escape c t)
-forward ink: key(escape c f)
-backward: key(escape c T)
-backward ink: key(escape c F)
+push: key(escape c t)
+push ink: key(escape c f)
+(pop | pup): key(escape c T)
+(pop | pup) ink: key(escape c F)
 drip <number>: user.insert_line_up(number)
 drop <number>: user.insert_line_down(number)
 head: key(escape b i)
