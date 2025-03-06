@@ -27,6 +27,7 @@ leet: insert("leet")
 len: insert("len")
 
 scope: insert("::")
+cope: insert("::")
 is type: insert(": ")
 item: insert(", ")
 
