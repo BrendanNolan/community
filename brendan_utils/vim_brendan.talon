@@ -22,7 +22,7 @@ rightwards:
 
 above: key(escape shift-o)
 (newline | below): key(escape o)
-duplicate: key(y y p)
+duplicate: key(escape y y p)
 
 left: key(left)
 right: key(right)
