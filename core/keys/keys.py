@@ -206,7 +206,7 @@ symbol_key_words = {
     "rice": "]",
     "scope": "::",
     "period": ".",
-    "dot": ".",
+    #"dot": ".",
     "prick": ".",
     "punk": ".",
     "point": ".",
