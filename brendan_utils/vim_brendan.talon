@@ -159,6 +159,8 @@ new (arg | org | argument | orgument | param | parameter):
 go to func:
     insert("/;\n?)\n%?[a-z,A-Z]\nb")
 
+drive <user.any_alphanumeric_key>: user.forward_insert(any_alphanumeric_key)
+reverse <user.any_alphanumeric_key>: user.backward_insert(any_alphanumeric_key)
 push: key(escape c t)
 push ink: key(escape c f)
 (pop | pup): key(escape c T)

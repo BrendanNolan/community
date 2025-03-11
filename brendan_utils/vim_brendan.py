@@ -87,6 +87,15 @@ class Actions:
         escape()
         actions.insert(f"{number}jo")
 
+    def forward_insert(alpha_num: str):
+        """Insert before next matching character"""
+        escape()
+        actions.insert(f"f{alpha_num}i")
+
+    def backward_insert(alpha_num: str):
+        """Insert before next matching character"""
+        escape()
+        actions.insert(f"F{alpha_num}i")
 
 
 def to_snake_case(text):
