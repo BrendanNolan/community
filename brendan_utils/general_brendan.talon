@@ -1,3 +1,5 @@
+kill talon: insert("pkill -i talon\n")
+
 bank: insert("")
 
 zero: key(0)
