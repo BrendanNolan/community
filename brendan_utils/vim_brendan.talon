@@ -20,8 +20,8 @@ leftwards:
 rightwards:
     key(l)
 
-above: key(escape shift-o)
-(newline | below): key(escape o)
+above [<number>]: user.above(number)
+(newline | below) [<number>]: user.below(number)
 duplicate: key(escape y y p)
 
 left: key(left)

@@ -97,6 +97,22 @@ class Actions:
         escape()
         actions.insert(f"F{alpha_num}i")
 
+    def above(line_count: int):
+        """Inserts a line above"""
+        escape()
+        if line_count is None:
+            actions.insert("O")
+        else:
+            actions.insert(f"{line_count}ko")
+
+    def below(line_count: int):
+        """Inserts a line below"""
+        escape()
+        if line_count is None:
+            actions.insert("o")
+        else:
+            actions.insert(f"{line_count}jo")
+
 
 def to_snake_case(text):
     # Replace spaces or hyphens with underscores
