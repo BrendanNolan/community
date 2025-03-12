@@ -20,39 +20,22 @@ class Actions:
         """Calls method"""
         l, r = prepare_for_method_call(text)
         actions.insert(to_snake_case(l) + "." + to_snake_case(r))
-        if r != "await":
-          actions.user.insert_between("(", ")")
-
-    def function_call(text: str):
-        """Calls function"""
-        actions.user.insert_between(to_snake_case(text) + "(", ")")
+        actions.user.insert_between("(", ")")
 
     def while_loop():
         """While loop"""
         actions.insert("while ")
+        actions.user.insert_between("(", ")")
 
     def for_loop():
         """For loop"""
-        actions.user.insert_between("for ", " in")
+        actions.user.insert("for ")
+        actions.user.insert_between("(", ")")
 
     def if_statement():
         """For loop"""
         actions.insert("if ")
-
-    def mod_block(text: str):
-        """Module block"""
-        actions.insert("mod " + to_snake_case(text) + " {")
-        enter()
-
-    def func(text: str):
-        """Function"""
-        actions.insert("fn " + to_snake_case(text) + "()")
-        escape()
-        actions.insert("i")
-
-    def assign(text: str):
-        """Assign"""
-        actions.insert(to_snake_case(text) + " = ")
+        actions.user.insert_between("(", ")")
 
 
 def escape():
