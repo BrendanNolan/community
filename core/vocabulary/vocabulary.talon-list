@@ -30,6 +30,7 @@ rezz: res
 vim
 mane: main
 talon
+talent: talon
 widget
 vec
 rust vec: vec
