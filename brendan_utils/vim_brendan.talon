@@ -118,7 +118,7 @@ file search:
 fugitive:
     key(escape)
     insert(" gg")
-(disk | save | vim write | editor write | ritter | writter):
+(disk | vim write | editor write | ritter | writter):
     key(escape)
     insert(":w")
     key(enter)
