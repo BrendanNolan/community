@@ -61,4 +61,6 @@ is greater: " > "
 is greatereek: " >= "
 logic and: " && "
 logic or: " || "
+ref: "&"
+comma: ","
 
