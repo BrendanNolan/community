@@ -95,12 +95,12 @@ class Actions:
     def backward_insert(alpha_num: str):
         """Insert before next matching character"""
         escape()
-        actions.insert(f"F{alpha_num}i")
+        actions.insert(f"F{alpha_num}a")
 
     def above(line_count: int):
         """Inserts a line above"""
         escape()
-        if line_count is None:
+        if line_count == -1:
             actions.insert("O")
         else:
             actions.insert(f"{line_count}ko")
@@ -108,7 +108,7 @@ class Actions:
     def below(line_count: int):
         """Inserts a line below"""
         escape()
-        if line_count is None:
+        if line_count == -1:
             actions.insert("o")
         else:
             actions.insert(f"{line_count}jo")
