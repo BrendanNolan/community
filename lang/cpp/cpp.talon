@@ -1,8 +1,12 @@
-# code.language: sea plus plus
-# -
-#
-# constant <user.text>$: user.cpp_let(text)
-# variable <user.text>$: user.cpp_let_mut(text)
+code.language: cplusplus
+-
+
+constant <user.text>$: user.let(text, "")
+variable <user.text>$: user.let_mut(text, "")
+constant reference <user.text>$: user.let(text, "&")
+variable reference <user.text>$: user.let_mut(text, "&")
+constant pointer <user.text>$: user.let(text, "*")
+variable pointer <user.text>$: user.let_mut(text, "*")
 # method <user.text>$: user.cpp_method_call(text)
 # (mod | module) <user.text>$: user.cpp_mod_block(text)
 #
