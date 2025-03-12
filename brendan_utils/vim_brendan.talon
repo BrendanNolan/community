@@ -96,14 +96,12 @@ replace <user.text>:
     key(escape)
     insert("?{text}\\c\n")
     insert("ciw")
-search <user.text>:
+search <user.word>:
     key(escape)
-    insert("0")
-    insert("/{text}\\c\n")
-birch <user.text>:
+    insert("/{word}\\c\n")
+birch <user.word>:
     key(escape)
-    insert("0")
-    insert("?{text}\\c\n")
+    insert("?{word}\\c\n")
 
 undo: key(escape u)
 redo: key(escape ctrl-r)
