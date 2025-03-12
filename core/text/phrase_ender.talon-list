@@ -62,5 +62,7 @@ is greatereek: " >= "
 logic and: " && "
 logic or: " || "
 ref: "&"
+star: "*"
+asterisk: "*"
 comma: ","
 

@@ -179,6 +179,7 @@ symbol_key_words = {
     "dollar": "$",
     "pound": "£",
     # Brendan
+    "ref": "&",
     "item": ", ",
     "semco": ";",
     "question": "?",
