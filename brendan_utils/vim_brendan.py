@@ -47,7 +47,9 @@ class Actions:
         actions.insert(" ff")
         if text == "":
             return
+        actions.sleep("20ms")
         actions.insert(to_smashed_lower(text))
+        actions.sleep("20ms")
         enter()
 
     def north(number: int):
