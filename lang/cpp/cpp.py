@@ -10,11 +10,11 @@ class Actions:
 
     def let(text: str, decoration: str):
         """Inserts a let statement"""
-        actions.insert("const auto{decoration} " + to_snake_case(text) + " = ")
+        actions.insert(f"const auto{decoration} " + to_snake_case(text) + " = ")
 
     def let_mut(text: str, decoration: str):
         """Inserts a let mut statement"""
-        actions.insert("auto{decoration} " + to_snake_case(text) + " = ")
+        actions.insert(f"auto{decoration} " + to_snake_case(text) + " = ")
 
     def method_call(text: str):
         """Calls method"""
