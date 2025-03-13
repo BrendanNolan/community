@@ -169,7 +169,7 @@ symbol_key_words = {
     "percent": "%",
     "math hat": "^",
     "amper": "&",
-    "pipe": "|",
+    "pope": "|",
     "dub quote": '"',
     "quote": '"',
     "quad": '"',
@@ -180,7 +180,7 @@ symbol_key_words = {
     "pound": "£",
     # Brendan
     "ref": "&",
-    "item": ", ",
+    "element": ", ",
     "semco": ";",
     "question": "?",
     "slash": "/",

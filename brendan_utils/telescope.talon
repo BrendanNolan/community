@@ -9,7 +9,7 @@ telescope quit:
 
 telescope (last | previous):
     key(escape)
-    insert(" rf")
+    insert(" tr")
 
 telescope refs:
     key(escape)

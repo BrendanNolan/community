@@ -74,7 +74,8 @@ symbols = {
     "percent": "%",
     "math hat": "^",
     "amper": "&",
-    "pipe": "|",
+    "pope": "|",
+    "pipe": " | ",
     "dub quote": '"',
     "quote": '"',
     "quad": '"',
@@ -84,7 +85,7 @@ symbols = {
     "dollar": "$",
     "pound": "£",
     # Brendan
-    "item": ", ",
+    "element": ", ",
     "semco": ";",
     "question": "?",
     "slash": "/",
@@ -137,7 +138,7 @@ symbols = {
     "space": " ",
     "leader": " ",
     "cospace": ": ", # Using this instead of "is type" because we need a single word due to the splitting algorithm
-    "item": ", ",
+    "element": ", ",
     "semco": ";",
     "question": "?",
     "backslash": "\\",

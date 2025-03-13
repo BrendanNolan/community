@@ -4,6 +4,8 @@ bank: insert("")
 
 (deaf | def): insert("def ")
 
+pipe: insert(" | ")
+
 zero: key(0)
 one: key(1)
 two: key(2)
