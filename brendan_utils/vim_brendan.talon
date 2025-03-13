@@ -3,12 +3,6 @@ open neo vim: insert("nvim ")
 
 (escape | stake | steak | scape): key(escape)
 
-# ascend:
-#     key(escape)
-#     insert("k")
-#     insert("0")
-# descend:
-#     key(escape j 0)
 upwards:
     key(k)
     key(0)
@@ -20,14 +14,23 @@ leftwards:
 rightwards:
     key(l)
 
+godef: insert("gd")
+declaration: insert(" gd")
+vertical split: insert(" vs")
+horizontal split: insert(" hs")
+
+(see | sea) do:
+    key(escape)
+    insert(":cdo ")
+
 above [<number>]: user.above(number or -1)
 (newline | below) [<number>]: user.below(number or -1)
 duplicate: key(escape y y p)
 
 left: key(left)
 right: key(right)
-north <number>: user.north(number)
-south <number>: user.south(number)
+(north | ascend) <number>: user.north(number)
+(south | descend) <number>: user.south(number)
 
 select next: key(ctrl-n)
 select preev: key(ctrl-p)
