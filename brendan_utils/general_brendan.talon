@@ -2,6 +2,8 @@ kill talon: insert("pkill -i talon\n")
 
 bank: insert("")
 
+(deaf | def): insert("def ")
+
 zero: key(0)
 one: key(1)
 two: key(2)

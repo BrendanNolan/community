@@ -1,13 +1,23 @@
 code.language: cplusplus
 -
 
-constant <user.text>$: user.let(text, "")
-variable <user.text>$: user.let_mut(text, "")
-constant reference <user.text>$: user.let(text, "&")
-variable reference <user.text>$: user.let_mut(text, "&")
-constant pointer <user.text>$: user.let(text, "*")
-variable pointer <user.text>$: user.let_mut(text, "*")
-method <user.text>$: user.method_call(text)
+constant <user.text>$: user.cpp_let(text, "")
+variable <user.text>$: user.cpp_let_mut(text, "")
+constant (reference | ref) <user.text>$: user.cpp_let(text, "&")
+variable (reference | ref) <user.text>$: user.cpp_let_mut(text, "&")
+constant pointer <user.text>$: user.cpp_let(text, "*")
+variable pointer <user.text>$: user.cpp_let_mut(text, "*")
+method <user.text>$: user.cpp_method_call(text)
+
+const: insert("const ")
+
+include:
+    insert("#include ")
+    user.insert_between('"', '"')
+
+standard include:
+    insert("#include ")
+    user.insert_between('<', '>')
 
 # Control Flow
 loop: user.cpp_loop()

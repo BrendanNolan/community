@@ -8,50 +8,45 @@ mod = Module()
 @mod.action_class
 class Actions:
 
-    def let(text: str, decoration: str):
+    def cpp_let(text: str, decoration: str):
         """Inserts a let statement"""
-        actions.insert(f"const auto{decoration} " + to_snake_case(text) + " = ")
+        actions.insert(f"const auto{decoration} " + cpp_to_snake_case(text) + " = ")
 
-    def let_mut(text: str, decoration: str):
+    def cpp_let_mut(text: str, decoration: str):
         """Inserts a let mut statement"""
-        actions.insert(f"auto{decoration} " + to_snake_case(text) + " = ")
+        actions.insert(f"auto{decoration} " + cpp_to_snake_case(text) + " = ")
 
-    def method_call(text: str):
+    def cpp_method_call(text: str):
         """Calls method"""
-        l, r = prepare_for_method_call(text)
-        actions.insert(to_snake_case(l) + "." + to_snake_case(r))
+        l, r = cpp_prepare_for_method_call(text)
+        actions.insert(cpp_to_snake_case(l) + "." + cpp_to_snake_case(r))
         actions.user.insert_between("(", ")")
 
-    def while_loop():
+    def cpp_while_loop():
         """While loop"""
         actions.insert("while ")
         actions.user.insert_between("(", ")")
 
-    def for_loop():
+    def cpp_for_loop():
         """For loop"""
         actions.user.insert("for ")
         actions.user.insert_between("(", ")")
 
-    def if_statement():
+    def cpp_if_statement():
         """For loop"""
         actions.insert("if ")
         actions.user.insert_between("(", ")")
 
 
-def escape():
+def cpp_escape():
     actions.key("escape")
 
 
-def enter():
+def cpp_enter():
     actions.key("enter")
 
 
-def esc(k):
-    actions.key("escape")
-    actions.key(k)
-
-
-def prepare_for_method_call(word: str):
+def cpp_prepare_for_method_call(word: str):
     """Splits word on call"""
     parts = word.split("calling", 1)
     if len(parts) < 2:
@@ -65,7 +60,7 @@ def prepare_for_method_call(word: str):
     return left, right
 
 
-def to_snake_case(text):
+def cpp_to_snake_case(text):
     # Replace spaces or hyphens with underscores
     text = re.sub(r"[\s\-]+", "_", text)
     # Add underscores before uppercase letters
@@ -73,10 +68,10 @@ def to_snake_case(text):
     return text.lower()
 
 
-def to_upper_camel(text):
+def cpp_to_upper_camel(text):
     return ''.join(word.capitalize() for word in re.split(r'[ _-]+', text))
 
 
-def to_smashed_lower(text):
+def cpp_to_smashed_lower(text):
     return ''.join(word.lower() for word in re.split(r'[ _-]+', text))
 
