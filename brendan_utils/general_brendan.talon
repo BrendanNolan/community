@@ -32,6 +32,7 @@ bird <user.word>: user.bird(word)
 leet: insert("leet")
 len: insert("len")
 
+element: insert(", ")
 scope: insert("::")
 cope: insert("::")
 is type: insert(": ")
