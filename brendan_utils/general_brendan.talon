@@ -36,7 +36,7 @@ element: insert(", ")
 scope: insert("::")
 cope: insert("::")
 is type: insert(": ")
-item: insert(", ")
+# item: insert(", ")
 
 spacey <user.text>: "{text} "
 
