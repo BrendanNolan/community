@@ -35,13 +35,13 @@ right: key(right)
 select next: key(ctrl-n)
 select preev: key(ctrl-p)
 
-(climb | clime | binsert):
+(climb | clime):
     key(escape)
     key(I)
-(fall | kinsert):
+fall:
     key(escape)
     insert("A")
-(shunt | finsert | chant):
+(shunt | chant):
     key(escape)
     insert("A ")
 squeeze:
