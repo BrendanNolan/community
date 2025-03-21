@@ -20,6 +20,11 @@ ten:
     key(1)
     key(0)
 
+leftwards:
+    key(left)
+rightwards:
+    key(right)
+
 and then: sleep(50ms)
 
 bird <user.word>: user.bird(word)

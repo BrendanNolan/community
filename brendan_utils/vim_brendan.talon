@@ -9,10 +9,6 @@ upwards:
 downwards:
     key(j)
     key(0)
-leftwards:
-    key(h)
-rightwards:
-    key(l)
 
 godef: insert("gd")
 declaration: insert(" gd")
