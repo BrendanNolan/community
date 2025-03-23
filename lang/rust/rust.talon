@@ -48,7 +48,7 @@ unsafe block: user.code_state_unsafe()
     insert(" {")
     key("enter")
 
-toggle use: user.code_toggle_libraries()
+toggle import: user.code_toggle_libraries()
 
 ## Simple aliases
 borrow: "&"
@@ -68,9 +68,9 @@ trait: "trait "
 match: user.code_state_switch()
 static: "static "
 self taught: "self."
-use: user.code_import()
+import: user.code_import()
 
-use <user.code_libraries>:
+import <user.code_libraries>:
     user.code_insert_library(code_libraries, "")
     key(; enter)
 
