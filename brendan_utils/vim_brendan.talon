@@ -28,6 +28,8 @@ right: key(right)
 (north | ascend) <number>: user.north(number)
 (south | descend) <number>: user.south(number)
 
+condition consume <number>: user.condition_consume(number)
+
 select next: key(ctrl-n)
 select preev: key(ctrl-p)
 
