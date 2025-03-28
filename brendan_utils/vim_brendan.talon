@@ -25,8 +25,8 @@ duplicate: key(escape y y p)
 
 left: key(left)
 right: key(right)
-(north | ascend) <number>: user.north(number)
-(south | descend) <number>: user.south(number)
+(north | northern | ascend) <number>: user.north(number)
+(south | southern | descend) <number>: user.south(number)
 
 condition consume <number>: user.condition_consume(number)
 
