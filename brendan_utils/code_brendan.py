@@ -38,6 +38,7 @@ symbols = {
     "pound sign": "£",
     # Symbols
     "ref": "&",
+    "reference": "&",
     "hyphen": "-",
     "L paren": "(",
     "left paren": "(",

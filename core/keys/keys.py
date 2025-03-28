@@ -180,6 +180,7 @@ symbol_key_words = {
     "pound": "£",
     # Brendan
     "ref": "&",
+    "reference": "&",
     "semco": ";",
     "question": "?",
     "slash": "/",
