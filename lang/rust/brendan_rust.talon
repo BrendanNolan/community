@@ -26,6 +26,7 @@ loop:
 for loop: user.for_loop()
 while loop: user.while_loop()
 if statement: user.if_statement()
+(where | wear | ware) clause: insert("where ")
 return: user.insert_between("return ", ";")
 (insert | add) return type:
     key(escape)
