@@ -40,11 +40,14 @@ class Actions:
         actions.sleep("20ms")
         actions.insert(" gc")
 
-    def buffer(text: str):
+    def buffer(text: str, search_all_buffers: bool):
         """Tries to open a buffer automatically from its name by searching the smashed
         text in telescope"""
         escape()
-        actions.insert(" ff")
+        if search_all_buffers:
+            actions.insert(" ff")
+        else:
+            actions.insert(" tb")
         if text == "":
             return
         actions.sleep("20ms")
