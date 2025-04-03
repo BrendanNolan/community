@@ -297,10 +297,18 @@ copy (state | statement) <number> (after | down)$: user.copy_lines(number, "y", 
 (delete | cut | destroy) (state | statement) <number> (before | up)$: user.copy_lines(number, "d", "k", "state")
 (delete | cut | destroy) (state | statement) <number> (after | down)$: user.copy_lines(number, "d", "j", "state")
 
-pan left: key(ctrl-h)
-pan right: key(ctrl-l)
-pan up: key(ctrl-k)
-pan down: key(ctrl-j)
+pan left:
+    key(escape)
+    key(ctrl-h)
+pan right:
+    key(escape)
+    key(ctrl-l)
+pan up:
+    key(escape)
+    key(ctrl-k)
+pan down:
+    key(escape)
+    key(ctrl-j)
 
 # NEXT
 next assign:
