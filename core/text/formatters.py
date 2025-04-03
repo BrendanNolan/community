@@ -256,7 +256,7 @@ code_formatter_names = {
     "shouting": "ALL_CAPS",
     "all down": "ALL_LOWERCASE",
     "dotted": "DOT_SEPARATED",
-    "string": "DOUBLE_QUOTED_STRING",
+    "double string": "DOUBLE_QUOTED_STRING",
     "pipe ed": "PIPE_ED",
     "dunder": "DOUBLE_UNDERSCORE",
     "kebab": "DASH_SEPARATED",

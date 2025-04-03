@@ -36,7 +36,7 @@ vector:
     insert("std::vector<>")
     key(escape)
     key(i)
-(stood | stud) string: insert("std::string")
+string: insert("std::string")
 (stud | stood): insert("std::")
 
 see out: insert("std::cout << ")
