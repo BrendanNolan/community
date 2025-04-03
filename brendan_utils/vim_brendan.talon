@@ -56,6 +56,10 @@ leap:
     key(escape)
     key(s)
 
+outer leap:
+    key(escape)
+    key(S)
+
 (enter | slap): key(enter)
 
 spike:
