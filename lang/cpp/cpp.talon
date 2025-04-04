@@ -8,6 +8,7 @@ variable (reference | ref) <user.text>$: user.cpp_let_mut(text, "&")
 constant pointer <user.text>$: user.cpp_let(text, "*")
 variable pointer <user.text>$: user.cpp_let_mut(text, "*")
 method <user.text>$: user.cpp_method_call(text)
+dynamic cast: insert("dynamic_cast<")
 
 const: insert("const ")
 
