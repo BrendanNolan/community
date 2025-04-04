@@ -123,6 +123,7 @@ fugitive:
     insert(" gg")
 (disk | vim write | editor write | ritter | writter):
     key(escape)
+    sleep(50ms)
     insert(":w")
     key(enter)
 (vim quit | editor quit):
