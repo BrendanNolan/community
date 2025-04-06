@@ -16,3 +16,12 @@
 (teemux | tux | tucks) look:
     key(ctrl-g)
     key(o)
+
+execute:
+    key(ctrl-g)
+    key(0)
+    sleep(50ms)
+    key(escape)
+    sleep(50ms)
+    key(c)
+    key(c)
