@@ -120,16 +120,19 @@ class Actions:
 
     def condition_consume(number: int):
         """Pulls lines up into a conditional statement"""
+        descent_needed = number > 1
         escape()
         actions.insert("Oif  {")
         actions.key("delete")
         escape()
         actions.insert("j_")
         actions.key("ctrl-v")
-        actions.insert(f"{number - 1}j")
+        if descent_needed:
+            actions.insert(f"{number - 1}j")
         actions.insert("I    ")
         escape()
-        actions.insert(f"{number - 1}j")
+        if descent_needed:
+            actions.insert(f"{number - 1}j")
         actions.insert("o}")
         escape()
         actions.insert(f"{number + 1}k_ela")
