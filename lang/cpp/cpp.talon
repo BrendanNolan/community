@@ -38,6 +38,10 @@ vector:
     key(escape)
     key(i)
 string: insert("std::string")
+mutex: insert("std::mutex")
+lock guard: insert("std::lock_guard")
+map: insert("std::map<")
+unordered map: insert("std::unordered_map<")
 (stud | stood): insert("std::")
 
 see out: insert("std::cout << ")
