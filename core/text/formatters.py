@@ -173,6 +173,17 @@ class SentenceFormatter(Formatter):
     def unformat(self, text: str) -> str:
         return unformat_upper(text)
 
+class MemberFormatter(Formatter):
+    def format(self, text: str) -> str:
+        # Replace spaces or hyphens with underscores
+        text = re.sub(r"[\s\-]+", "_", text)
+        # Add underscores before uppercase letters
+        text = re.sub(r"([a-z])([A-Z])", r"\1_\2", text)
+        text = f"{text}_"
+        return text.lower()
+
+    def unformat(self, text: str) -> str:
+        return ""
 
 def capitalize_first(text: str) -> str:
     stripped = text.lstrip()
@@ -246,6 +257,7 @@ formatter_list = [
     CodeFormatter("ALL_SLASHES", "/", lambda text: f"/{text.lower()}", lower),
     CodeFormatter("DOUBLE_UNDERSCORE", "__", lower, lower),
     CodeFormatter("DOUBLE_COLON_SEPARATED", "::", lower, lower),
+    MemberFormatter("MEMBER")
 ]
 
 formatters_dict = {f.id: f for f in formatter_list}
@@ -266,6 +278,7 @@ code_formatter_names = {
     "smash": "NO_SPACES",
     "sing string": "SINGLE_QUOTED_STRING",
     "constant": "ALL_CAPS,SNAKE_CASE",
+    "member": "MEMBER",
 }
 prose_formatter_names = {
     "packed": "DOUBLE_COLON_SEPARATED",
