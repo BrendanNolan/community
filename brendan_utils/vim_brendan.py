@@ -5,7 +5,6 @@ mod = Module()
 
 
 def escape():
-    actions.sleep("20ms")
     actions.key("escape")
     actions.sleep("20ms")
 
