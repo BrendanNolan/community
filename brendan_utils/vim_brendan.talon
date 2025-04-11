@@ -47,10 +47,14 @@ squeeze:
     insert("$i")
 
 slide:
+    sleep(25ms)
     key(escape)
+    sleep(25ms)
     key(f)
 sloop:
+    sleep(25ms)
     key(escape)
+    sleep(25ms)
     key(F)
 leap:
     key(escape)
@@ -164,10 +168,26 @@ go to func:
 
 drive <user.any_alphanumeric_key>: user.forward_insert(any_alphanumeric_key)
 reverse <user.any_alphanumeric_key>: user.backward_insert(any_alphanumeric_key)
-push: key(escape c t)
-push ink: key(escape c f)
-(pop | pup): key(escape c T)
-(pop | pup) ink: key(escape c F)
+push:
+    sleep(25ms)
+    key(escape)
+    sleep(25ms)
+    key(c t)
+push ink:
+    sleep(25ms)
+    key(escape)
+    sleep(25ms)
+    key(c f)
+(pop | pup):
+    sleep(25ms)
+    key(escape)
+    sleep(25ms)
+    key(c T)
+(pop | pup) ink:
+    sleep(25ms)
+    key(escape)
+    sleep(25ms)
+    key(c F)
 drip <number>: user.insert_line_up(number)
 drop <number>: user.insert_line_down(number)
 head:
