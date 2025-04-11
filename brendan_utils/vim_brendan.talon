@@ -208,6 +208,7 @@ select around: key(escape d a)
 select line: key(escape d d)
 
 demi:
+    sleep(25ms)
     key(escape)
     sleep(25ms)
     key(A)
@@ -217,6 +218,7 @@ demi:
     insert(":w")
     key(enter)
 semi:
+    sleep(25ms)
     key(escape)
     sleep(25ms)
     key(A)
