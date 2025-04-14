@@ -366,7 +366,7 @@ pin (struct | class):
     sleep(25ms)
     insert(" su")
 
-source flip:
+flip source:
     key(escape)
     sleep(25ms)
     insert(" hh")
