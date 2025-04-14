@@ -1,5 +1,7 @@
 list: user.vocabulary
 -
+boole: bool
+bool
 ron: run
 rone: run
 quod: quad

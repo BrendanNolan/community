@@ -26,6 +26,7 @@ for loop: user.cpp_for_loop()
 while loop: user.cpp_while_loop()
 
 #Types
+bool: insert("bool ")
 integer: insert("int")
 size tee: insert("size_t")
 condition variable: insert("std::condition_variable")

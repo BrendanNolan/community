@@ -36,6 +36,7 @@ return: user.insert_between("return ", ";")
     insert(" -> ")
 
 # Types
+bool: insert("bool")
 you size: insert("usize")
 integer eight: insert("i8")
 integer sixteen: insert("i16")
