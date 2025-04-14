@@ -43,6 +43,7 @@ lock guard: insert("std::lock_guard")
 map: insert("std::map<")
 unordered map: insert("std::unordered_map<")
 (stud | stood): insert("std::")
+(pair | par): insert("std::pair<")
 
 see out: insert("std::cout << ")
 stream: insert(" << ")
