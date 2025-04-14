@@ -17,6 +17,10 @@
     key(ctrl-g)
     key(o)
 
+(teemux | tux | tucks) (last | previous):
+    key(ctrl-g)
+    key(m)
+
 execute:
     key(ctrl-g)
     key(0)
