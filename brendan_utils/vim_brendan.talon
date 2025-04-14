@@ -202,14 +202,19 @@ tail:
     key(e a)
 big head: key(escape shift-b i)
 big tail: key(escape shift-e a)
-change word: key(escape c i w)
-change big word: key(escape c i shift-w)
+change word:
+    key(escape)
+    sleep(75ms)
+    key(c i w)
+change big word:
+    key(escape)
+    sleep(75ms)
+    key(c i shift-w)
 change: key(escape c i)
 change around: key(escape c a)
 change line:
-    sleep(25ms)
     key(escape)
-    sleep(25ms)
+    sleep(75ms)
     key(c)
     key(c)
 yoink word: key(escape y i w)
