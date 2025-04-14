@@ -119,6 +119,16 @@ find a file: insert(" ff")
 vim grep:
     key(escape)
     insert(" gf")
+global grep:
+    key(escape)
+    key(y i w)
+    sleep(50ms)
+    insert(" gf")
+    sleep(100ms)
+    key(ctrl-r)
+    sleep(25ms)
+    insert('"')
+
 file search:
     key(escape)
     inseert(" fs")
