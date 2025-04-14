@@ -52,9 +52,9 @@ class Actions:
             actions.insert(" tb")
         if text == "":
             return
-        actions.sleep("20ms")
+        actions.sleep("100ms")
         actions.insert(to_smashed_lower(text))
-        actions.sleep("20ms")
+        actions.sleep("100ms")
         enter()
 
     def north(number: int):
