@@ -356,6 +356,26 @@ pan down:
     key(escape)
     key(ctrl-j)
 
+pin (funk | function):
+    key(escape)
+    sleep(25ms)
+    insert(" fu")
+
+pin (struct | class):
+    key(escape)
+    sleep(25ms)
+    insert(" su")
+
+source flip:
+    key(escape)
+    sleep(25ms)
+    insert(" hh")
+
+raise:
+    key(escape)
+    sleep(25ms)
+    insetr("  ")
+
 # NEXT
 next assign:
     key(escape)
