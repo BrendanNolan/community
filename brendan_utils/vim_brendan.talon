@@ -374,7 +374,8 @@ flip source:
 raise:
     key(escape)
     sleep(25ms)
-    insetr("  ")
+    key(space)
+    key(space)
 
 # NEXT
 next assign:
