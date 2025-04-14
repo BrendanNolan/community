@@ -9,5 +9,7 @@ to vim: key(alt-e)
 
 ripgrep: insert("rg ")
 
+date: insert("date\n")
+
 switch <user.letter>$: user.switch(letter)
 long switch <user.text>$: user.long_switch(text)
