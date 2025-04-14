@@ -1,5 +1,7 @@
 list: user.vocabulary
 -
+speck: spec
+spec
 boole: bool
 bool
 ron: run
