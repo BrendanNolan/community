@@ -13,3 +13,6 @@ date: insert("date\n")
 
 switch <user.letter>$: user.switch(letter)
 long switch <user.text>$: user.long_switch(text)
+
+git everything: insert("git_everything\n")
+stash and keep: insert("stash_and_keep\n")
