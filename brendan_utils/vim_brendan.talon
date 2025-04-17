@@ -46,16 +46,8 @@ squeeze:
     key(escape)
     insert("$i")
 
-slide:
-    sleep(25ms)
-    key(escape)
-    sleep(25ms)
-    key(f)
-sloop:
-    sleep(25ms)
-    key(escape)
-    sleep(25ms)
-    key(F)
+slide <user.any_alphanumeric_key>: user.slide(any_alphanumeric_key, "f")
+sloop <user.any_alphanumeric_key>: user.slide(any_alphanumeric_key, "F")
 leap:
     key(escape)
     key(S)

@@ -1,5 +1,8 @@
 list: user.vocabulary
 -
+lua
+lea: lua
+loa: lua
 speck: spec
 spec
 boole: bool

@@ -139,6 +139,14 @@ class Actions:
         escape()
         actions.insert(f"{number + 1}k_ela")
 
+    def slide(text: str, action_character: str):
+        """Goes to character"""
+        escape()
+        actions.sleep("25ms")
+        actions.key(action_character)
+        actions.insert(text)
+
+
 def to_snake_case(text):
     # Replace spaces or hyphens with underscores
     text = re.sub(r"[\s\-]+", "_", text)
