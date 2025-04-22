@@ -48,9 +48,7 @@ squeeze:
 
 slide <user.any_alphanumeric_key>: user.slide(any_alphanumeric_key, "f")
 sloop <user.any_alphanumeric_key>: user.slide(any_alphanumeric_key, "F")
-leap:
-    key(escape)
-    key(S)
+leap <user.word>: user.leap(word)
 
 (enter | slap): key(enter)
 

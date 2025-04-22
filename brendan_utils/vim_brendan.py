@@ -146,6 +146,17 @@ class Actions:
         actions.key(action_character)
         actions.insert(text)
 
+    def leap(text: str):
+        """Leaps"""
+        escape()
+        actions.sleep("25ms")
+        actions.key("S")
+        actions.sleep("25ms")
+        if len(text) < 2:
+            return
+        actions.key(text[0])
+        actions.key(text[1])
+
 
 def to_snake_case(text):
     # Replace spaces or hyphens with underscores
