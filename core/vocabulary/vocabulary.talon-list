@@ -1,5 +1,6 @@
 list: user.vocabulary
 -
+sob: sub
 lua
 lea: lua
 loa: lua
