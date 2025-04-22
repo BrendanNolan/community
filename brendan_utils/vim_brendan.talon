@@ -3,6 +3,16 @@ open neo vim: insert("nvim ")
 
 (escape | stake | steak | scape): key(escape)
 
+top:
+    key(escape)
+    sleep(25ms)
+    insert("gg")
+
+bottom:
+    key(escape)
+    sleep(25ms)
+    key(G)
+
 upwards:
     key(k)
     key(0)
