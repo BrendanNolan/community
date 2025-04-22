@@ -1,3 +1,4 @@
 git add all$: "git add .\n"
 git cane$: "git cane"
 git plav$: "git plav\n"
+git clang format$: "git clang-format\n"

@@ -3,6 +3,12 @@ open neo vim: insert("nvim ")
 
 (escape | stake | steak | scape): key(escape)
 
+push up:
+    key(escape)
+    sleep(25ms)
+    key(space)
+    key(space)
+
 top:
     key(escape)
     sleep(25ms)
