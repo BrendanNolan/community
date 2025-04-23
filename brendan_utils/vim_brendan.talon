@@ -31,6 +31,8 @@ declaration: insert(" gd")
 vertical split: insert(" vs")
 horizontal split: insert(" hs")
 
+header: key(escape h h)
+
 (see | sea) do:
     key(escape)
     insert(":cdo ")
@@ -121,11 +123,19 @@ open file <user.text>:
     user.buffer(text, true)
 buffer <user.text>:
     user.buffer(text, false)
-find a file: insert(" ff")
-vim grep:
+find file:
+    key(escape)
+    insert(" ff")
+    sleep(40ms)
+grep:
     key(escape)
     insert(" gf")
-global grep:
+    sleep(40ms)
+local grep:
+    key(escape)
+    insert(" fs")
+    sleep(40ms)
+this word:
     key(escape)
     key(y i w)
     sleep(50ms)
@@ -134,10 +144,16 @@ global grep:
     key(ctrl-r)
     sleep(25ms)
     insert('"')
-
-file search:
+local this word:
     key(escape)
-    inseert(" fs")
+    key(y i w)
+    sleep(50ms)
+    insert(" fs")
+    sleep(100ms)
+    key(ctrl-r)
+    sleep(25ms)
+    insert('"')
+
 fugitive:
     key(escape)
     insert(" gg")
@@ -359,16 +375,16 @@ copy (state | statement) <number> (after | down)$: user.copy_lines(number, "y", 
 (delete | cut | destroy) (state | statement) <number> (before | up)$: user.copy_lines(number, "d", "k", "state")
 (delete | cut | destroy) (state | statement) <number> (after | down)$: user.copy_lines(number, "d", "j", "state")
 
-pan left:
+(window | pan) left:
     key(escape)
     key(ctrl-h)
-pan right:
+(window | pan) right:
     key(escape)
     key(ctrl-l)
-pan up:
+(window | pan) up:
     key(escape)
     key(ctrl-k)
-pan down:
+(window | pan) down:
     key(escape)
     key(ctrl-j)
 
