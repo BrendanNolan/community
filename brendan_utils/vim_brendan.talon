@@ -92,8 +92,8 @@ sweet:
     key(0)
     key(i)
 
-record: key(escape q)
-play: key(escape @)
+record <user.any_alphanumeric_key>: user.macro_action("q", any_alphanumeric_key)
+play <user.any_alphanumeric_key>: user.macro_action("@", any_alphanumeric_key)
 market:
     key(escape)
     insert("mz")

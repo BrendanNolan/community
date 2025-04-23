@@ -157,6 +157,13 @@ class Actions:
         actions.key(text[0])
         actions.key(text[1])
 
+    def macro_action(action_character: str, macro_name: str):
+        """Record macro"""
+        escape()
+        actions.sleep("25ms")
+        actions.key(action_character)
+        actions.key(macro_name[0])
+
 
 def to_snake_case(text):
     # Replace spaces or hyphens with underscores
