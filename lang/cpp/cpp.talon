@@ -25,7 +25,12 @@ loop: user.cpp_loop()
 for loop: user.cpp_for_loop()
 while loop: user.cpp_while_loop()
 
+# Keywords
+class: insert("class ")
+enum: insert("enum ")
+
 #Types
+void: insert("void ")
 bool: insert("bool ")
 integer: insert("int")
 size tee: insert("size_t")

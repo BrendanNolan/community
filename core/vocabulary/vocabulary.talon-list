@@ -1,5 +1,7 @@
 list: user.vocabulary
 -
+enum
+enumeration
 git
 grep
 jason: json

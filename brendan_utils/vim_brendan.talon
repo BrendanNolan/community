@@ -26,10 +26,22 @@ downwards:
     key(j)
     key(0)
 
-godef: insert("gd")
-declaration: insert(" gd")
-vertical split: insert(" vs")
-horizontal split: insert(" hs")
+godef:
+    key(escape)
+    sleep(25ms)
+    insert("gd")
+declaration:
+    key(escape)
+    sleep(25ms)
+    insert(" gd")
+vertical split:
+    key(escape)
+    sleep(25ms)
+    insert(" vs")
+horizontal split:
+    key(escape)
+    sleep(25ms)
+    insert(" hs")
 
 header: key(escape h h)
 
@@ -119,14 +131,28 @@ birch <user.word>:
 undo: key(escape u)
 redo: key(escape ctrl-r)
 
-open file <user.text>:
-    user.buffer(text, true)
-buffer <user.text>:
-    user.buffer(text, false)
-find file:
+forward: key(escape ctrl-f)
+backward: key(escape ctrl-b)
+
+substitute:
     key(escape)
-    insert(" ff")
-    sleep(40ms)
+    sleep(25ms)
+    insert(" sb")
+    sleep(25ms)
+    key(left)
+    sleep(25ms)
+    key(ctrl-f)
+    sleep(25ms)
+    key(escape)
+    sleep(25ms)
+    key(h c i w)
+
+open file <user.text>:
+    user.buffer(text, true, true)
+buffer <user.text>:
+    user.buffer(text, false, true)
+find file <user.text>:
+    user.buffer(text, true, false)
 grep:
     key(escape)
     insert(" gf")

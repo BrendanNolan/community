@@ -42,7 +42,7 @@ class Actions:
         actions.sleep("20ms")
         actions.insert(" gc")
 
-    def buffer(text: str, search_all_buffers: bool):
+    def buffer(text: str, search_all_buffers: bool, select_result: bool):
         """Tries to open a buffer automatically from its name by searching the smashed
         text in telescope"""
         escape()
@@ -55,7 +55,8 @@ class Actions:
         actions.sleep("100ms")
         actions.insert(to_smashed_lower(text))
         actions.sleep("100ms")
-        enter()
+        if select_result:
+            enter()
 
     def north(number: int):
         """ Go up"""
