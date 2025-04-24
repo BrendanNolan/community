@@ -43,7 +43,7 @@ horizontal split:
     sleep(25ms)
     insert(" hs")
 
-header: key(escape h h)
+header: key(escape space h h)
 
 (see | sea) do:
     key(escape)
