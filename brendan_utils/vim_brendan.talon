@@ -288,9 +288,9 @@ delete around: key(escape d a)
 delete line: key(escape d d)
 select word: key(escape v i w)
 select big word: key(escape v i shift-w)
-select: key(escape d i)
-select around: key(escape d a)
-select line: key(escape d d)
+select: key(escape v i)
+select around: key(escape v a)
+select line: key(escape V)
 
 demi:
     sleep(25ms)
