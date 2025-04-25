@@ -246,8 +246,6 @@ push ink:
     key(escape)
     sleep(25ms)
     key(c F)
-drip <number>: user.insert_line_up(number)
-drop <number>: user.insert_line_down(number)
 head:
     sleep(25ms)
     key(escape)
