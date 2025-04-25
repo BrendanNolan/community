@@ -273,11 +273,11 @@ change line:
     sleep(75ms)
     key(c)
     key(c)
-yoink word: key(escape y i w)
-yoink big word: key(escape y i shift-w)
-yoink: key(escape y i)
-yoink around: key(escape y a)
-yoink line:
+(yoink | lift) word: key(escape y i w)
+(yoink | lift) big word: key(escape y i shift-w)
+(yoink | lift): key(escape y i)
+(yoink | lift) around: key(escape y a)
+(yoink | lift) line:
     key(escape)
     key(y)
     key(y)
@@ -291,6 +291,13 @@ select big word: key(escape v i shift-w)
 select: key(escape v i)
 select around: key(escape v a)
 select line: key(escape V)
+
+safe (punch | paste):
+    key(escape)
+    sleep(25ms)
+    key(v i w)
+    sleep(25ms)
+    key(space p)
 
 demi:
     sleep(25ms)

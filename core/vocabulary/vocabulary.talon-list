@@ -1,5 +1,7 @@
 list: user.vocabulary
 -
+yoink
+bog: bug
 enum
 enumeration
 git
