@@ -281,6 +281,16 @@ change line:
     key(escape)
     key(y)
     key(y)
+(yoink | lift) into <user.letter>:
+    insert('"{letter}y')
+(yoink | lift) word into <user.letter>:
+    key(escape)
+    sleep(25ms)
+    insert('"{letter}yiw')
+pasta <user.letter>:
+    key(escape)
+    sleep(25ms)
+    insert('"{letter}p')
 delete word: key(escape d i w)
 delete big word: key(escape d i shift-w)
 delete: key(escape d i)
