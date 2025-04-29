@@ -1,5 +1,7 @@
 list: user.vocabulary
 -
+ore: or
+oar: or
 yoink
 bog: bug
 enum
