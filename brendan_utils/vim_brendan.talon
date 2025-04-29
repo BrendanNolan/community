@@ -113,6 +113,14 @@ market <user.letter>:
 piggy <user.letter>:
     key(escape)
     sleep(25ms)
+    insert("`{letter}")
+market$:
+    key(escape)
+    sleep(25ms)
+    insert("mz")
+piggy$:
+    key(escape)
+    sleep(25ms)
     insert("`z")
 
 goplace <user.text>:
