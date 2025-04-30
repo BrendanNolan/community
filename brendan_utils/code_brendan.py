@@ -194,53 +194,43 @@ symbols = {
 }
 
 
-def join_symbol_aware(words, join_text):
+def join_symbol_aware(words):
     result = ""
     hammer = False
+    member = False
     capitalize_next = False
     for i, s in enumerate(words):
         if s == "hammer":
             hammer = True
+            member = False
+            continue
+        if s == "member":
+            hammer = False
+            member = True
             continue
         if s in symbols:
+            if member:
+                result += "_"
             hammer = False
+            member = False
             result += symbols[s]
             continue
         if hammer:
             result += s.capitalize()
         else:
-            if i > 0 and words[i - 1] not in symbols:
-                result += join_text
+            if i > 0 and words[i - 1] not in symbols and words[i - 1] not in ["hammer", "member"]:
+                result += "_"
             result += s
-    return result
-
-
-def hammer_symbol_aware(words):
-    result = ""
-    capitalize_next = True
-    for i, s in enumerate(words):
-        if s in symbols:
-            result += symbols[s]
-        else:
-            if capitalize_next:
-                result += s.capitalize()
-            else:
-                result += s.lower()
-            capitalize_next = True if s not in symbols else False
+    if member:
+       result += "_"
     return result
 
 
 @mod.action_class
 class Actions:
-    def smart(text: str, init_formatter: str):
+    def smart(text: str):
         """My attempt at a formatter that does what I want most of the time"""
-        assert(init_formatter in {"snake", "hammer", "spaced"})
         text = text.lower()
         words = text.split(" ")
-        if init_formatter == "snake":
-            actions.insert(join_symbol_aware(words, "_"))
-        elif init_formatter == "spaced":
-            actions.insert(join_symbol_aware(words, " "))
-        elif init_formatter == "hammer":
-            actions.insert(hammer_symbol_aware(words))
+        actions.insert(join_symbol_aware(words))
 
