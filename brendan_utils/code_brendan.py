@@ -71,6 +71,7 @@ symbols = {
     "right angle": ">",
     "greater than": ">",
     "star": "*",
+    "pointer": "*",
     "hash": "#",
     "percent": "%",
     "math hat": "^",
