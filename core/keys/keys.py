@@ -173,6 +173,7 @@ symbol_key_words = {
     "dub quote": '"',
     "quote": '"',
     "quad": '"',
+    "quod": '"',
     "twin": "'",
     "double quote": '"',
     # Currencies

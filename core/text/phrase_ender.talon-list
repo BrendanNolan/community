@@ -78,4 +78,6 @@ comma: ","
 pope: "|"
 pipe: " | "
 element: ", "
+quad: '"'
+quod: '"'
 

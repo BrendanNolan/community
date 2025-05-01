@@ -81,6 +81,7 @@ symbols = {
     "dub quote": '"',
     "quote": '"',
     "quad": '"',
+    "quod": '"',
     "twin": "'",
     "double quote": '"',
     # Currencies
