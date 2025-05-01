@@ -1,4 +1,4 @@
-(telescope | telly | tele) buffers:
+(telescope | telly | tele) (buf | buffers | bufs | buffs):
     key(escape)
     insert(" tb")
 
@@ -7,7 +7,7 @@
     sleep(150ms)
     key(q)
 
-(telescope | telly | tele) (last | previous):
+(telescope | telly | tele) (last | previous | prev | preev):
     key(escape)
     insert(" tr")
 

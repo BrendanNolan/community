@@ -157,11 +157,11 @@ substitute:
     sleep(25ms)
     key(h c i w)
 
-open file <user.text>:
+open (file | buffer | buf | buff) <user.text>:
     user.buffer(text, true, true)
-buffer <user.text>:
+(buffer | buf) <user.text>:
     user.buffer(text, false, true)
-find file <user.text>:
+find (file | buffer | buf | buff) <user.text>:
     user.buffer(text, true, false)
 grep:
     key(escape)
