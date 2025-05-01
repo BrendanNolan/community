@@ -193,7 +193,7 @@ local this word:
 fugitive:
     key(escape)
     insert(" gg")
-(disk | vim write | editor write | ritter | writter):
+(disk | disc | tisk | vim write | editor write | ritter | writter):
     sleep(25ms)
     key(escape)
     sleep(25ms)
