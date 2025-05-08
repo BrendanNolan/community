@@ -45,6 +45,15 @@ horizontal split:
 
 header: key(escape space h h)
 
+backup header:
+    key(escape)
+    sleep(25ms)
+    insert("-")
+    sleep(50ms)
+    insert("*")
+    sleep(10ms)
+    key(enter)
+
 (see | sea) do:
     key(escape)
     insert(":cdo ")
