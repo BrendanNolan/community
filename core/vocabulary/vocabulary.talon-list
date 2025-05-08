@@ -1,5 +1,6 @@
 list: user.vocabulary
 -
+corps: core
 ampersand
 ore: or
 oar: or
