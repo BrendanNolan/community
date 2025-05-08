@@ -78,7 +78,19 @@ def prepare_for_method_call(word: str):
     if len(parts) < 2:
         parts = word.split("invoke", 1)
     if len(parts) < 2:
+        parts = word.split("invokes", 1)
+    if len(parts) < 2:
+        parts = word.split("invoked", 1)
+    if len(parts) < 2:
+        parts = word.split("invoker", 1)
+    if len(parts) < 2:
         parts = word.split("call", 1)
+    if len(parts) < 2:
+        parts = word.split("calls", 1)
+    if len(parts) < 2:
+        parts = word.split("called", 1)
+    if len(parts) < 2:
+        parts = word.split("caller", 1)
     left = parts[0].strip() if parts else ""
     right = parts[1].strip() if len(parts) > 1 else ""
     if not right:
