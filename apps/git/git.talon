@@ -15,7 +15,7 @@ git stash [push] [<user.git_arguments>] message [<user.prose>]:
 git status$: "git status\n"
 git add patch$: "git add --patch\n"
 git show: "git show "
-git diff: "git diff"
+git diff: "git diff "
 git diff (cached | cashed)$: "git diff --cached\n"
 
 # Convenience
