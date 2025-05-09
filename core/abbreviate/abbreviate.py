@@ -72,6 +72,7 @@ abbreviations = {
     "communication": "comm",
     "communications": "comms",
     "compare": "cmp",
+    "comparison": "comp",
     "condition": "cond",
     "conference": "conf",
     "config": "cfg",
