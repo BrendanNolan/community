@@ -17,7 +17,8 @@ git add patch$: "git add --patch\n"
 git show: "git show "
 git diff: "git diff "
 git diff (cached | cashed)$: "git diff --cached\n"
-git branch sort: "git branch --sort -committerdate\n""
+git show branches: "git branch --sort -committerdate\n""
+show branches: "git branch --sort -committerdate\n""
 
 # Convenience
 git clone clipboard:
