@@ -71,6 +71,7 @@ abbreviations = {
     "comment": "cmt",
     "communication": "comm",
     "communications": "comms",
+    "comp": "cmp",
     "compare": "cmp",
     "comparison": "comp",
     "condition": "cond",
