@@ -26,6 +26,11 @@ downwards:
     key(j)
     key(0)
 
+print file:
+    key(escape)
+    sleep(25ms)
+    insert(" pfp")
+
 godef:
     key(escape)
     sleep(25ms)
