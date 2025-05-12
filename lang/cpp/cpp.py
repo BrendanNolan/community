@@ -29,7 +29,7 @@ class Actions:
 
     def cpp_for_loop():
         """For loop"""
-        actions.user.insert("for ")
+        actions.insert("for ")
         actions.user.insert_between("(", ")")
 
     def cpp_if_statement():

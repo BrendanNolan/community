@@ -21,13 +21,16 @@ standard include:
     user.insert_between('<', '>')
 
 # Control Flow
-loop: user.cpp_loop()
 for loop: user.cpp_for_loop()
 while loop: user.cpp_while_loop()
+if statement: user.cpp_if_statement()
 
 # Keywords
-class: insert("class ")
-enum: insert("enum ")
+class: "class "
+enum: "enum "
+new: "new "
+static cast: "static_cast<"
+dynamic cast: "dynamic_cast<"
 
 #Types
 void: insert("void ")
