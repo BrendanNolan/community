@@ -186,12 +186,12 @@ symbols = {
     "percent": " % ",
     "scope": "::",
     # keywords
-    "let": "let ",
-    "mut": "mut ",
-    "mute": "mut ",
-    "if": "if ",
-    "for": "for ",
-    "while": "while ",
+    # "let": "let ",
+    # "mut": "mut ",
+    # "mute": "mut ",
+    # "if": "if ",
+    # "for": "for ",
+    # "while": "while ",
 }
 
 
