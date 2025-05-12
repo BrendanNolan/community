@@ -120,22 +120,10 @@ sweet:
 
 record <user.any_alphanumeric_key>: user.macro_action("q", any_alphanumeric_key)
 play <user.any_alphanumeric_key>: user.macro_action("@", any_alphanumeric_key)
-market <user.letter>:
-    key(escape)
-    sleep(25ms)
-    insert("m{letter}")
-piggy <user.letter>:
-    key(escape)
-    sleep(25ms)
-    insert("`{letter}")
-market$:
-    key(escape)
-    sleep(25ms)
-    insert("mz")
-piggy$:
-    key(escape)
-    sleep(25ms)
-    insert("`z")
+market <user.letter>: user.market(letter)
+piggy <user.letter>: user.piggy(letter)
+market$: user.market("z")
+piggy$: user.piggy("z")
 
 goplace <user.text>:
     key(escape)

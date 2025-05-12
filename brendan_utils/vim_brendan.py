@@ -165,6 +165,18 @@ class Actions:
         actions.key(action_character)
         actions.key(macro_name[0])
 
+    def market(text: str):
+        "market"
+        escape()
+        actions.sleep("25ms")
+        actions.insert(f"m{text.upper()}")
+
+    def piggy(text: str):
+        "piggy"
+        escape()
+        actions.sleep("25ms")
+        actions.insert(f"`{text.upper()}")
+
 
 def to_snake_case(text):
     # Replace spaces or hyphens with underscores
