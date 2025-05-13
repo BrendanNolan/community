@@ -59,6 +59,12 @@ backup header:
     sleep(10ms)
     key(enter)
 
+(diffmaster | diff master):
+    key(escape)
+    sleep(25ms)
+    insert(":DiffviewOpen master..HEAD")
+    key(enter)
+
 (see | sea) do:
     key(escape)
     insert(":cdo ")
