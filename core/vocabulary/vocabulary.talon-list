@@ -1,5 +1,7 @@
 list: user.vocabulary
 -
+nod: node
+nods: nodes
 purr: per
 par: per
 parr: per
