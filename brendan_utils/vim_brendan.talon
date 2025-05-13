@@ -54,7 +54,7 @@ backup header:
     key(escape)
     sleep(25ms)
     insert("-")
-    sleep(50ms)
+    sleep(150ms)
     insert("*")
     sleep(10ms)
     key(enter)
