@@ -351,6 +351,11 @@ fixup:
 selection fixup:
     key(= =)
 
+quickfix:
+    key(escape)
+    sleep(25ms)
+    insert(" co")
+
 temple:
     insert("<>")
     key(escape)
