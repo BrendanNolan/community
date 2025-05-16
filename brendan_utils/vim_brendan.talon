@@ -215,6 +215,11 @@ fugitive:
     key(escape)
     insert(":q!")
     key(enter)
+finished:
+    key(escape)
+    sleep(25ms)
+    insert(":x")
+    key(enter)
 
 first arg:
     key(escape)
