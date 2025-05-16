@@ -69,6 +69,8 @@ backup header:
     key(escape)
     insert(":cdo ")
 
+normal: insert(":normal ")
+
 above [<number>]: user.above(number or -1)
 (newline | below) [<number>]: user.below(number or -1)
 duplicate: key(escape y y p)
