@@ -367,6 +367,12 @@ quickfix:
     sleep(25ms)
     insert(" co")
 
+(quickfix close | quick close | close fix | closefix):
+    key(escape)
+    sleep(25ms)
+    insert(":cclose")
+    key(enter)
+
 temple:
     insert("<>")
     key(escape)
