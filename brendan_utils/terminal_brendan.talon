@@ -14,6 +14,7 @@ cat: insert("cat ")
     key(left)
 change dir: insert("cd ")
 change dir up: insert("cd ..\n")
+fuzzy find: insert("fzf ")
 
 date: insert("date\n")
 
