@@ -1,6 +1,4 @@
-cargo run:
-    insert("cargo run ")
-cargo check:
-    insert("cargo check ")
-cargo clippy:
-    insert("cargo clippy ")
+cargo: "cargo "
+cargo run: "cargo run "
+cargo check: "cargo check "
+cargo clippy: "cargo clippy "
