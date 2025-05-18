@@ -186,6 +186,7 @@ symbols = {
     "percent": " % ",
     "scope": "::",
     # keywords
+    "const": "const ",
     # "let": "let ",
     # "mut": "mut ",
     # "mute": "mut ",
