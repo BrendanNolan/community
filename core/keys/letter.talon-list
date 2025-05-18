@@ -4,7 +4,7 @@ list: user.letter
 # https://talon.wiki/quickstart/improving_recognition_accuracy/#collected-alternatives-to-the-default-alphabet
 air: a
 bob: b
-cap: c
+catch: c
 drum: d
 each: e
 fox: f
@@ -15,7 +15,7 @@ indie: i
 sit: i
 inch: i
 jury: j
-crunch: k
+# crunch: k
 look: l
 made: m
 note: n

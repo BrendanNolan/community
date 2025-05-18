@@ -95,6 +95,7 @@ math some: sum
 math sum: sum
 tas: toss
 tus: toss
+cut
 cute: q
 cute framework: qt
 cutie: qt
