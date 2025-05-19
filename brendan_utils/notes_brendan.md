@@ -43,6 +43,11 @@ snake charlie drum", it will write `'charlie_drum'`, etc.
 Capture letters like this: `switch <user.letter>$: user.switch(letter)` Capture words like this:
 `long switch <user.text>$: user.long_switch(text)`
 
+# Where To Put Punctuation
+
+Put it in `core/text/phrase_ender.talon-list`, `core/keys/keys.talon`, and
+`brendan_utils/code_brendan.py`.
+
 # Outstanding Questions
 
 Can I make formatters ("snake", "kebob" etc) respect my `punctuation_words` list (as defined in
