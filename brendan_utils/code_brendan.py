@@ -88,6 +88,8 @@ symbols = {
     "dollar": "$",
     "pound": "£",
     # Brendan
+    "break": "",
+    "over": "",
     "element": ", ",
     "semco": ";",
     "question": "?",
