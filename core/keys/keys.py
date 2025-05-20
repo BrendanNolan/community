@@ -180,6 +180,8 @@ symbol_key_words = {
     "dollar": "$",
     "pound": "£",
     # Brendan
+    "bubble": "&",
+    "bubbles": "&",
     "ref": "&",
     "reference": "&",
     "semco": ";",
