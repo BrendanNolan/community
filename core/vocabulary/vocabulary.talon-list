@@ -1,5 +1,7 @@
 list: user.vocabulary
 -
+roast: rust
+elland: element
 hamper: amper
 emperor: amper
 cons: const
