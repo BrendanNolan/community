@@ -177,6 +177,26 @@ class Actions:
         actions.sleep("25ms")
         actions.insert(f"`{text.upper()}")
 
+    def obliterate(count: int):
+        """Obliterate"""
+        escape()
+        actions.key("shift-v")
+        actions.insert(f"{count}jd")
+
+    def indent(count: int):
+        """indent"""
+        escape()
+        actions.insert(f"0i")
+        for _ in range(count):
+            actions.insert(" ")
+
+    def dedent(count: int):
+        """dedent"""
+        escape()
+        actions.insert(f"0")
+        for _ in range(count):
+            actions.insert("x")
+
 
 def to_snake_case(text):
     # Replace spaces or hyphens with underscores

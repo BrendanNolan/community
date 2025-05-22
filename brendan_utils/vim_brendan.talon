@@ -438,6 +438,10 @@ instruct:
     key(escape)
     key(shift-v)
 
+obliterate <number>: user.obliterate(number)
+indent <number>: user.indent(number)
+dedent <number>: user.dedent(number)
+
 select whole:
     key(escape)
     key(shift-v)
