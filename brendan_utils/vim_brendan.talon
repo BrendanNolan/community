@@ -440,6 +440,7 @@ instruct:
 
 obliterate <number>: user.obliterate(number)
 indent <number>: user.indent(number)
+extra indent <number>: user.extra_indent(number)
 dedent <number>: user.dedent(number)
 
 select whole:

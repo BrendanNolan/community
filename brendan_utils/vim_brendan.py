@@ -186,6 +186,13 @@ class Actions:
     def indent(count: int):
         """indent"""
         escape()
+        actions.insert(f"0dwi")
+        for _ in range(count):
+            actions.insert(" ")
+
+    def extra_indent(count: int):
+        """indent"""
+        escape()
         actions.insert(f"0i")
         for _ in range(count):
             actions.insert(" ")
