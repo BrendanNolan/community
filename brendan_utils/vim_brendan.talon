@@ -130,8 +130,8 @@ record <user.any_alphanumeric_key>: user.macro_action("q", any_alphanumeric_key)
 play <user.any_alphanumeric_key>: user.macro_action("@", any_alphanumeric_key)
 market <user.letter>: user.market(letter)
 piggy <user.letter>: user.piggy(letter)
-market$: user.market("z")
-piggy$: user.piggy("z")
+market$: user.market("Z")
+piggy$: user.piggy("Z")
 
 goplace <user.text>:
     key(escape)
