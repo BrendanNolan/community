@@ -1,6 +1,5 @@
 list: user.vocabulary
 -
-ref
 roast: rust
 elland: element
 hamper: amper
