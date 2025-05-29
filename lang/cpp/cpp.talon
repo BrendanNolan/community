@@ -39,9 +39,7 @@ integer: insert("int")
 size tee: insert("size_t")
 condition variable: insert("std::condition_variable")
 optional:
-    insert("std::optional<>")
-    key(escape)
-    key(i)
+    insert("std::optional<")
 vector:
     insert("std::vector<>")
     key(escape)
