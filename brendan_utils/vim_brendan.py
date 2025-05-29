@@ -180,8 +180,11 @@ class Actions:
     def obliterate(count: int):
         """Obliterate"""
         escape()
+        if count == 1:
+            insert("dd")
+            return
         actions.key("shift-v")
-        actions.insert(f"{count}jd")
+        actions.insert(f"{count - 1}jd")
 
     def indent(count: int):
         """indent"""
