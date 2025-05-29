@@ -189,6 +189,7 @@ symbols = {
     "remainder": " % ",
     "percent": " % ",
     "scope": "::",
+    "item": ", ",
     # keywords
     "const": "const ",
     # "let": "let ",
